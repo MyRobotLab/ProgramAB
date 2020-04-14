@@ -51,7 +51,7 @@ node ('master') { // use any node
    stage('install') {
       sh "mkdir -p ${repo}${version}"
 
-      sh "cp inmoov2-${version}.zip ${repo}${version}"
+      sh "cp ${artifactId}-${version}.zip ${repo}${version}"
 
       // inmoov2-{version}.pom
       def depFileName = repo + version + "/" + artifactId + "-" + version + ".pom"
