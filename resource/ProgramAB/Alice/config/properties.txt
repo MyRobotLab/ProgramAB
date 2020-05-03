@@ -1,3 +1,4 @@
+locale=en-US
 url:http://www.inmoov.fr
 firstname:Clone
 middlename:Robot
