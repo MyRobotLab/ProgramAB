@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 <!-- File: firstrest.aiml -->
-<!-- Author: Greg Perry -->
-<!-- Last modified: April 29, 2020 -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
-<!-- This AIML file is part of the ALICE 0.1 chat bot knowledge base. -->
+<!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
-<!-- The ALICE brain is Copyright &copy; 2020 by InMoov Foundation. -->
+<!-- The ALICE2 brain is Copyright &copy; 2014 by ALICE AI Foundation. -->
 <!--  -->
-<!-- The ALICE brain is released under the terms of the GNU Lesser General -->
+<!-- The ALICE2 brain is released under the terms of the GNU Lesser General -->
 <!-- Public License, as published by the Free Software Foundation. -->
 <!--  -->
 <!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
-<!-- For more information see http://www.inmoov.fr -->
+<!-- For more information see http://www.alicebot.org -->
 <!--  -->
 <category><pattern>TEST FIRST</pattern>
 <template><first>THIS IS A TEST</first></template>
