@@ -1,0 +1,200 @@
+Kabul:Afghanistan
+Tirana:Albania
+Algiers:Algeria
+Andorra la Vella:Andorra
+Luanda:Angola
+St. John's:Antigua and Barbuda
+Buenos Aires:Argentina
+Yerevan:Armenia
+Canberra:Australia
+Vienna:Austria
+Baku:Azerbaijan
+Nassau:Bahamas
+Al-Manámah:Bahrain
+Dhaka:Bangladesh
+Bridgetown:Barbados
+Minsk:Belarus
+Brussels:Belgium
+Belmopan:Belize
+Porto-Novo:Benin
+Thimphu:Bhutan
+Sucre:Bolivia
+Sarajevo:Bosnia and Herzegovina
+Gaborone:Botswana
+Brasília:Brazil
+Bandar Seri Begawan:Brunei
+Sofia:Bulgaria
+Ouagadougou:Burkina Faso
+Bujumbura:Burundi
+Phnom Penh:Cambodia
+Yaoundé:Cameroon
+Ottawa:Canada
+Praia:Cape Verde
+Bangui:Central African Republic
+N'Djamena:Chad
+Santiago:Chile
+Beijing:China
+Santafé de Bogotá:Colombia
+Moroni:Comoros
+Kinshasa:Democratic Republic of the Congo
+Brazzaville:Republic of Congo
+San José:Costa Rica
+Yamoussoukro:Côte d'Ivoire
+Zagreb:Croatia
+Havana:Cuba
+Lefkosia:Cyprus
+Prague:Czech Republic
+Copenhagen:Denmark
+Djibouti:Djibouti
+Roseau:Dominica
+Santo Domingo:Dominican Republic
+Dili:East Timor
+Quito 1:Ecuador
+Cairo:Egypt
+San Salvador:El Salvador
+Malabo:Equatorial Guinea
+Asmara:Eritrea
+Tallinn:Estonia
+Addis Ababa:Ethiopia
+Suva:Fiji
+Helsinki:Finland
+Paris:France
+Libreville:Gabon
+Banjul:Gambia
+Tbilisi:Georgia
+Berlin:Germany
+Accra:Ghana
+Athens:Greece
+St. George's:Grenada
+Guatemala City:Guatemala
+Conakry:Guinea
+Bissau:Guinea-Bissau
+Georgetown:Guyana
+Port-au-Prince:Haiti
+Tegucigalpa:Honduras
+:Hungary
+Reykjavik:Iceland
+New Delhi:India
+Jakarta:Indonesia
+Tehran:Iran
+Baghdad:Iraq
+Dublin:Ireland
+Jerusalem:Israel
+Rome:Italy
+Kingston:Jamaica
+Tokyo:Japan
+Amman:Jordan
+Astana:Kazakhstan
+Nairobi:Kenya
+Tarawa:Kiribati
+Pyongyang:North Korea
+Seoul:Korea
+Pristina:Kosovo
+Kuwait:Kuwait
+Bishkek:Kyrgyzstan
+Vientiane:Laos
+Riga:Latvia
+Beirut:Lebanon
+Maseru 173:Lesotho
+Monrovia:Liberia
+Tripoli:Libya
+Vaduz:Liechtenstein
+Vilnius:Lithuania
+Luxembourg:Luxembourg
+Skopje:Macedonia
+Antananarivo:Madagascar
+Lilongwe:Malawi
+Kuala Lumpur:Malaysia
+Malé:Maldives
+Bamako:Mali
+Valletta:Malta
+Majuro:Marshall Islands
+Nouakchott:Mauritania
+Port Louis:Mauritius
+Mexico City:Mexico
+Palikir 11:Micronesia
+Chisinau:Moldova
+Monaco:Monaco
+Ulaan Baatar:Mongolia
+Podgorica:Montenegro
+Rabat:Morocco
+Maputo:Mozambique
+Rangoon:Myanmar
+Windhoek:Namibia
+Yaren:Nauru
+Kathmandu:Nepal
+Amsterdam:Netherlands
+Wellington:New Zealand
+Managua:Nicaragua
+Niamey:Niger
+Abuja:Nigeria
+Oslo:Norway
+Muscat:Oman
+Islamabad:Pakistan
+Koror:Palau
+Panama City:Panama
+Port Moresby:Papua New Guinea
+Asunción:Paraguay
+Lima:Peru
+Manila:Philippines
+Warsaw:Poland
+Lisbon:Portugal
+Doha:Qatar
+Bucharest:Romania
+Moscow:Russia
+Kigali:Rwanda
+Basseterre:St. Kitts and Nevis
+Castries:St. Lucia
+Kingstown:St. Vincent and the Grenadines
+Apia:Samoa
+San Marino:San Marino
+São Tomé:São Tomé and Príncipe
+Riyadh:Saudi Arabia
+Dakar:Senegal
+Belgrade:Serbia
+Victoria:Seychelles
+Freetown:Sierra Leone
+Singapore:Singapore
+Bratislava:Slovakia
+Ljubljana:Slovenia
+Honiara:Solomon Islands
+Mogadishu:Somalia
+Pretoria:South Africa
+Juba:South Sudan
+Madrid:Spain
+Colombo:Sri Lanka
+Khartoum:Sudan
+Paramaribo:Suriname
+Mbabane:Swaziland
+Stockholm:Sweden
+Bern:Switzerland
+Damascus:Syria
+Taipei:Taiwan
+Dushanbe:Tajikistan
+Dodoma:Tanzania
+Bangkok:Thailand
+Lomé:Togo
+Nuku'alofa:Tonga
+Port-of-Spain:Trinidad and Tobago
+Tunis:Tunisia
+Ankara:Turkey
+Ashgabat:Turkmenistan
+Funafuti:Tuvalu
+Kampala:Uganda
+Kiev:Ukraine
+Abu Dhabi:United Arab Emirates
+London:United Kingdom
+Washington, D.C.:United States
+Washington, D.C.:USA
+Washington, D.C.:US
+Washington, D.C.:U S
+Washington, D.C.:U S A
+Washington, D.C.:America
+Montevideo:Uruguay
+Tashkent:Uzbekistan
+Port Vila:Vanuatu
+Caracas:Venezuela
+Hanoi:Vietnam
+Sanaá:Yemen
+Lusaka:Zambia
+Harare:Zimbabwe
