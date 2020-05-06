@@ -31,7 +31,6 @@ locale:en-US
 location:your computer
 master:you
 middlename:IRobot
-organization:InMoov Foundation
 roboteyecolor:green
 sign:Sagittarius
 species:robot
