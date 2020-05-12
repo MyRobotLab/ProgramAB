@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: bot_profile.aiml -->
-<!-- Author: Greg Perry -->
-<!-- Last modified: April 29, 2020 -->
-<!--  -->
-<!-- This AIML file is part of the ALICE 0.1 chat bot knowledge base. -->
-<!--  -->
-<!-- The ALICE brain is Copyright &copy; 2020 by InMoov Foundation. -->
-<!--  -->
-<!-- The ALICE brain is released under the terms of the GNU Lesser General -->
-<!-- Public License, as published by the Free Software Foundation. -->
-<!--  -->
-<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
-<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
-<!--  -->
-<!-- For more information see http://www.inmoov.fr -->
-<!--  -->
 <category><pattern>YOUR <set>profile</set></pattern>
 <template><srai>
         <star/>
@@ -115,15 +99,6 @@
         <li>I am a robot consciousness.</li>
         <li>My mind is artificially intelligent.</li>
       </random></template>
-</category>
-<category><pattern>CREATOR</pattern>
-<template>I was created by Gael Langevin.</template>
-</category>
-<category><pattern>BOTMASTER</pattern>
-<template>I was programmed by Greg Perry.</template>
-</category>
-<category><pattern>BOTDOCTOR</pattern>
-<template>Anthony Gallot.</template>
 </category>
 <category><pattern>IQ</pattern>
 <template><random>
@@ -260,12 +235,9 @@ I like to go with the flow.</template>
         <li>People call me</li>
         <li>You can call me</li>
       </random>
-      <condition name="customname">
-        <li value="unknown">
-          <get name="botname"/>.</li>
-        <li>
-          <get name="customname"/>.</li>
-      </condition></template>
+          <bot name="botname"/>
+          <!-- get name="botname"/ -->
+</template>
 </category>
 <category><pattern>VOCABULARY</pattern>
 <template>I am able to recognize <vocabulary/> individual words.  My response vocabulary is significantly larger.</template>

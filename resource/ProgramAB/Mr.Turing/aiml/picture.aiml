@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: picture.aiml -->
-<!-- Author: Greg Perry -->
-<!-- Last modified: April 29, 2020 -->
-<!--  -->
-<!-- This AIML file is part of the ALICE 0.1 chat bot knowledge base. -->
-<!--  -->
-<!-- The ALICE brain is Copyright &copy; 2020 by InMoov Foundation. -->
-<!--  -->
-<!-- The ALICE brain is released under the terms of the GNU Lesser General -->
-<!-- Public License, as published by the Free Software Foundation. -->
-<!--  -->
-<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
-<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
-<!--  -->
-<!-- For more information see http://www.inmoov.fr -->
-<!--  -->
 <category><pattern>PICTUREBLAB *</pattern>
 <template><random>
         <li>Here you are.</li>
