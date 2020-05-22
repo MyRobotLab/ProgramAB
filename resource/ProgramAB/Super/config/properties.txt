@@ -3,6 +3,8 @@ name:S.U.P.E.R.
 firstname:Artificial
 middlename:Internet
 lastname:Entity
+description:S.U.P.E.R. is a natural language processing chatterbot—a program that engages in a conversation with a human by applying some heuristical pattern matching rules to the human's input. It was inspired by Joseph Weizenbaum's classical ELIZA program
+shortDescription:S.U.P.E.R., also referred to as Superbot, or simply Super classical ELIZA program
 fullname:Artificial Linguistic Internet Computer Entity, version 2.0
 email:info@alicebot.org
 gender:female

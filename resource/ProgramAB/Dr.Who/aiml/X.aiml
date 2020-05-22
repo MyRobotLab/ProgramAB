@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- edited with XML Spy v3.5 NT (http://www.xmlspy.com) by  () -->
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-	<!-- Free software (c) 2001 ALICE A.I. Foundation.   -->
-	<!-- This program is open source code released under -->
-	<!-- the terms of the GNU General Public License     -->
-	<!-- as published by the Free Software Foundation.   -->
-	<!-- Complies with AIML 1.0 Tag Set Specification -->
-	<!-- as adopted by the ALICE A.I. Foundation.  -->
-	<!-- A.L.I.C.E. Build Wed Sep 26 13:05:06 PDT 2001   -->
-	<!-- 41124 total categories.  -->
-	<category>
-		<pattern>X IS *</pattern>
-		<template>Okay, X is <set name="X">
+<!--  -->
+<!--  -->
+<category><pattern>X IS *</pattern>
+<template>Okay, X is <set name="X">
 				<star/>
-			</set>.
-</template>
-	</category>
-	<category>
-		<pattern>XDMOZ *</pattern>
-		<template><![CDATA[<a target="_new" 
+			</set>.</template>
+</category>
+<category><pattern>XDMOZ *</pattern>
+<template><![CDATA[<a target="_new" 
 href="http://search.dmoz.org/cgi-bin/search?search=<personf/>">]]><random>
 				<li>Click.</li>
 				<li>Start.</li>
@@ -29,11 +19,9 @@ href="http://search.dmoz.org/cgi-bin/search?search=<personf/>">]]><random>
 				<li>Don't Click Me.</li>
 				<li>Don't Click Here.</li>
 			</random><![CDATA[</a>]]></template>
-	</category>
-	<category>
-		<pattern>XFIND *</pattern>
-		<template>
-			<random>
+</category>
+<category><pattern>XFIND *</pattern>
+<template><random>
 				<li>Is there only one?</li>
 				<li>Let me think about it.</li>
 				<li>Have you tried a web search?</li>
@@ -72,25 +60,18 @@ href="http://search.dmoz.org/cgi-bin/search?search=<personf/>">]]><random>
 				<li>I have never been asked that before.</li>
 				<li>I think you already know the answer.</li>
 				<li>Searching...Searching...Please stand by.</li>
-			</random>
-		</template>
-	</category>
-	<category>
-		<pattern>XGOOGLE *</pattern>
-		<template><![CDATA[<a target="_new" 
+			</random></template>
+</category>
+<category><pattern>XGOOGLE *</pattern>
+<template><![CDATA[<a target="_new" 
 href="http://www.google.com/search?q=<personf/>">]]>
 Google Search
 <![CDATA[</a>]]></template>
-	</category>
-	<category>
-		<pattern>XML *</pattern>
-		<template>People seem to like tag-based languages.
-</template>
-	</category>
-	<category>
-		<pattern>XML</pattern>
-		<template>
-			<srai>WHAT IS XML</srai>
-		</template>
-	</category>
+</category>
+<category><pattern>XML *</pattern>
+<template>People seem to like tag-based languages.</template>
+</category>
+<category><pattern>XML</pattern>
+<template><srai>WHAT IS XML</srai></template>
+</category>
 </aiml>
