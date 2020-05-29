@@ -39,5 +39,6 @@ sign:known
 sister:known
 them:known
 thought:known
+userDescription:no personal description
 want:known
 we:known
