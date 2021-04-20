@@ -1,69 +1,127 @@
-/**********************************************************************************
- * JenkinsFile for ProgramAB
- *
- * for adjusting build number for specific branch build
- * Jenkins.instance.getItemByFullName("ProgramAB-multibranch/develop").updateNextBuildNumber(185)
- *  
- * CHANGE build.properties TO BUILD AND DEPLOY A NEW BUILD
- *
- ***********************************************************************************/
-// [$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/MyRobotLab/ProgramAB/']
+version = "2.0.${BUILD_NUMBER}"
+groupId = 'program-ab'
+artifactId = 'program-ab-data'
+resourceDir = 'ProgramAB'
+groupIdPath = groupId.replaceAll('\\.', '/')
 
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '3')), [$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/MyRobotLab/ProgramAB/'], pipelineTriggers([pollSCM('* * * * *')])])
+pipeline {
 
-   
-// node ('ubuntu') { // use any node
-node ('master') { // use any node
+   // use linux for ssh or switch from ssh-agent to plain ssh
+   agent  { label 'linux' }
 
-   def version = "1.3.${env.BUILD_NUMBER}" 
-   def groupId = "program-ab"
-   def artifactId = "program-ab-data"
-   def serviceName = "ProgramAB"
+    environment {
+        VERSION = "${version}"
+        GROUP_ID = "${groupId}"
+        GROUP_ID_PATH = "${groupIdPath}"
+        ARTIFACT_ID = "${artifactId}"
+        RESOURCE_DIR = "${resourceDir}"
+    }
 
-   // deployment variables
-   def path = groupId.replace(".","/") + "/" + artifactId.replace(".","/")
-   def repo = "/repo/artifactory/myrobotlab/" + path + "/" 
-
-   stage('clean') { 
-      echo 'clean the workspace'
-      // deleteDir()
-      cleanWs()
+   options {
+      // This is required if you want to clean before build
+     skipDefaultCheckout(true)
    }
 
-   stage('check out') { 
-      // checkout scm - apparently below "polls" what is the rate?
-      git "https://github.com/MyRobotLab/${serviceName}.git"
+   tools {
+      maven 'M3' // defined in global tools - maven is one of the only installers that works well for global tool
+   // jdk 'openjdk-11-linux' // defined in global tools
+   // git
    }
 
-   stage('build') { 
-      sh 'echo \"' + version + '\" > resource/${serviceName}/version.txt'
-   }
+   stages {
+      stage('init') {
+         steps {
+            echo '====== init ======'
+            script {
+               if (isUnix()) {
+                  echo sh(script: 'env|sort', returnStdout: true)
+               } else {
+                  bat("set")
+               }
+            }
+         }
+      }
 
-   stage('zip') {
-   
-        sh "zip -r ${artifactId}-${version}.zip resource"
-        // archiveArtifacts artifacts: 'test.zip', fingerprint: true    
-	}
+      stage('check out') {
+         steps {
+            echo '====== check out ======'
+            checkout scm
+         }
+      }
 
-   /**
-    * deployment locally by installing into maven like repo with nginx serving the repo directory
-    */
-   stage('install') {
-      sh "mkdir -p ${repo}${version}"
+      stage('clean') {
+         steps {
+            echo '====== clean ======'
+            // cleanWs()
 
-      sh "cp ${artifactId}-${version}.zip ${repo}${version}"
+            script {
+               if (isUnix()) {
+                  sh '''
+                     mvn clean
+                  '''
+               } else {
+                  bat('''
+                     mvn clean
+                  ''')
+               }
+            }
+         }
+      }
 
-      // inmoov2-{version}.pom
-      def depFileName = repo + version + "/" + artifactId + "-" + version + ".pom"
-      echo "writing pom " + depFileName
-      File file = new File(depFileName)
-      file.write("<project>")
-      file.append("<modelVersion>4.0.0</modelVersion>")
-      file.append("<groupId>"+groupId+"</groupId>")
-      file.append("<artifactId>"+artifactId+"</artifactId>")
-      file.append("<version>"+version+"</version>")
-      file.append("<description>Bots main service module for ${serviceName} compatible with Nixie release of myrobotlab</description>")
-      file.append("<url>http://myrobotlab.org</url>")
-      file.append("</project>")
-     }
-}
+      // FIXME - InMoov/version file needs to be created
+      stage('build') {
+         steps {
+            script {
+               echo '====== build ======'
+               if (isUnix()) {
+                  sh '''
+                        echo "building ${JOB_NAME}..."
+                        echo "${VERSION}" > resource/${RESOURCE_DIR}/version.txt
+                        mvn package
+                  '''
+               } else {
+                  bat('''
+                        type "building ${JOB_NAME}..."
+                        type '${VERSION}' > 'resource/${RESOURCE_DIR}/version.txt'
+                        mvn package
+                  ''')
+               } // isUnix
+            } // script
+         } // steps
+      } // stage
+/*
+     # not necessary to archive files - because the install step will copy the file up
+     stage('archive') {
+         steps {
+            archiveArtifacts 'target/inmoov-'+ version +'.zip'
+         }
+      }
+*/      
+
+   } // stages
+
+   post {
+    success {
+         echo "====== installing into repo ======"
+         
+         sshagent(credentials : ['myrobotlab2.pem']) {
+               sh 'ssh -v ubuntu@repo.myrobotlab.org'
+               sh 'scp ./target/${ARTIFACT_ID}-0.0.1-SNAPSHOT.zip ubuntu@repo.myrobotlab.org:/home/ubuntu'
+               sh '''
+                  ssh -o StrictHostKeyChecking=no ubuntu@repo.myrobotlab.org sudo mvn install:install-file  -Dfile=${ARTIFACT_ID}-0.0.1-SNAPSHOT.zip \
+                        -DgroupId=${GROUP_ID} \
+                        -DartifactId=${ARTIFACT_ID} \
+                        -Dversion=${VERSION} \
+                        -Dpackaging=zip \
+                        -DlocalRepositoryPath=/repo/artifactory/myrobotlab/
+                  
+                  ssh -o StrictHostKeyChecking=no ubuntu@repo.myrobotlab.org sudo mv \
+                  /repo/artifactory/myrobotlab/${GROUP_ID_PATH}/${ARTIFACT_ID}/maven-metadata-local.xml \
+                         /repo/artifactory/myrobotlab/${GROUP_ID_PATH}/${ARTIFACT_ID}/maven-metadata.xml
+
+               '''
+
+         } // sshagent
+    } // success
+  } // post
+} // pipeline
