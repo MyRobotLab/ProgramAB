@@ -105,17 +105,16 @@ pipeline {
          echo "====== installing into repo ======"
          
          sshagent(credentials : ['myrobotlab2.pem']) {
-               sh 'ssh -v ubuntu@repo.myrobotlab.org'
-               sh 'scp ./target/${ARTIFACT_ID}-0.0.1-SNAPSHOT.zip ubuntu@repo.myrobotlab.org:/home/ubuntu'
+               sh 'scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ./target/${ARTIFACT_ID}-0.0.1-SNAPSHOT.zip ubuntu@repo.myrobotlab.org:/home/ubuntu'
                sh '''
-                  ssh -o StrictHostKeyChecking=no ubuntu@repo.myrobotlab.org sudo mvn install:install-file  -Dfile=${ARTIFACT_ID}-0.0.1-SNAPSHOT.zip \
+                  ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@repo.myrobotlab.org sudo mvn install:install-file  -Dfile=${ARTIFACT_ID}-0.0.1-SNAPSHOT.zip \
                         -DgroupId=${GROUP_ID} \
                         -DartifactId=${ARTIFACT_ID} \
                         -Dversion=${VERSION} \
                         -Dpackaging=zip \
                         -DlocalRepositoryPath=/repo/artifactory/myrobotlab/
                   
-                  ssh -o StrictHostKeyChecking=no ubuntu@repo.myrobotlab.org sudo mv \
+                  ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@repo.myrobotlab.org sudo mv \
                   /repo/artifactory/myrobotlab/${GROUP_ID_PATH}/${ARTIFACT_ID}/maven-metadata-local.xml \
                          /repo/artifactory/myrobotlab/${GROUP_ID_PATH}/${ARTIFACT_ID}/maven-metadata.xml
 
