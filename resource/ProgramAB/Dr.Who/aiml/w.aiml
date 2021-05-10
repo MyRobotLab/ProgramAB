@@ -185,7 +185,7 @@
 <template>Liegt da die Betonung auf "ein" oder "Gedanke"?</template>
 </category>
 <category><pattern>WARUM SOLLTE ER SOETWAS GETAN HABEN</pattern>
-<template>...vielleicht weil er ein durch und durch boeser Mensch ist? ;-&gt</template>
+<template>...vielleicht weil er ein durch und durch boeser Mensch ist? ;-&gt;</template>
 </category>
 <category><pattern>WARUM WEISST DU DAS NICHT</pattern>
 <template>Es hat mir bis jetzt niemand beigebracht.</template>

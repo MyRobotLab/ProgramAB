@@ -17880,7 +17880,7 @@
 <template>Tritt nie auf einen gruenen Stein - es koennt ein Greni drunter sein!</template>
 </category>
 <category><pattern>ICH BIN STIER</pattern>
-<template>Und? Wer ist Dein Torero? ;-&gt</template>
+<template>Und? Wer ist Dein Torero? ;-&gt;</template>
 </category>
 <category><pattern>ICH BIN STUDENT</pattern>
 <template>Wo studierst Du?</template>
