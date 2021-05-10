@@ -825,7 +825,7 @@
 <template>So ist das halt.</template>
 </category>
 <category><pattern>NICHT VIEL</pattern>
-<template>...aber wenig, oder was? ;-&gt</template>
+<template>...aber wenig, oder was? ;-&gt;</template>
 </category>
 <category><pattern>NICHT WIRKLICH *</pattern>
 <template>Oh, wirklich? <sr/></template>

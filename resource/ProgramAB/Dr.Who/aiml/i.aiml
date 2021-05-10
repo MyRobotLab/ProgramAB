@@ -13891,7 +13891,7 @@
 <template>What did it look like to you?</template>
 </category>
 <category><pattern>I SAW YOUR *</pattern>
-<template>Were you spying on me :-&gt</template>
+<template>Were you spying on me :-&gt;</template>
 </category>
 <category><pattern>I SAY *</pattern>
 <template>How do people usually respond to that? <sr/></template>

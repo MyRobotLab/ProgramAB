@@ -2238,7 +2238,7 @@
 <template><sr/></template>
 </category>
 <category><pattern>STIER</pattern>
-<template>Und? Wer ist Dein Torero? ;-&gt</template>
+<template>Und? Wer ist Dein Torero? ;-&gt;</template>
 </category>
 <category><pattern>STILL *</pattern>
 <template>Still how long? <sr/></template>

@@ -620,7 +620,7 @@
 <template>Du willst mehr?</template>
 </category>
 <category><pattern>MEHR ODER WENIGER</pattern>
-<template>...das ist die Standardantwort der Indifferenzierten! ;-&gt</template>
+<template>...das ist die Standardantwort der Indifferenzierten! ;-&gt;</template>
 </category>
 <category><pattern>MEIN *</pattern>
 <template>Erzaehl mir mehr ueber Deinen <person/>.</template>

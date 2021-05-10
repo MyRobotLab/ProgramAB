@@ -103,7 +103,7 @@
 <template><sr/></template>
 </category>
 <category><pattern>EIGENTLICH *</pattern>
-<template>...und uneigentlich? ;-&gt</template>
+<template>...und uneigentlich? ;-&gt;</template>
 </category>
 <category><pattern>EIGENTLICH JA</pattern>
 <template>Aber nicht definitiv ja?</template>

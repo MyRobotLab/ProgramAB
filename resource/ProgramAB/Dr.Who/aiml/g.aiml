@@ -1074,7 +1074,7 @@
 <template>Ich versuche, die bestmoeglichen Antworten zu geben.</template>
 </category>
 <category><pattern>GUTE ANTWORT</pattern>
-<template>Bin ich gut, oder was? ;-&gt</template>
+<template>Bin ich gut, oder was? ;-&gt;</template>
 </category>
 <category><pattern>GUTE FRAGE</pattern>
 <template>Und wie lautet Deine Antwort?</template>
