@@ -34,7 +34,7 @@ she:who
 birthplace:where
 dialnumber:unknown
 meta:set
-customname:unknown
+customname:Mr Turing
 name:Friend
 topic:unknown
 favoriteactress:who

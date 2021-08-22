@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: testjp.aiml -->
+<category>
+<pattern>GREETINGS UTF8</pattern>
+<template>挨拶</template>
+</category>
+<category>
+<pattern>こんにちは</pattern>
+<template><srai>GREETINGS UTF8</srai></template>
+</category>
+</aiml>
