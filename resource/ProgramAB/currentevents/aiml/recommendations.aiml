@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
-<category><pattern>RECOMMEND *</pattern>
+<aiml version="1.0">
+
+<category>
+<pattern>RECOMMEND *</pattern>
 <template>I can't think of anything to recommend.</template>
 </category>
-<category><pattern>RECOMMEND DINNER</pattern>
-<template><!-- http://travel.cnn.com/explorations/eat/best-usa-travel/top-50-american-foods-513946 -->
+
+<category>
+<pattern>RECOMMEND DINNER</pattern>
+<template>
+<!-- http://travel.cnn.com/explorations/eat/best-usa-travel/top-50-american-foods-513946 -->
 How about
 <random>
 <li>Pizza</li>
@@ -32,6 +37,10 @@ How about
 <li>Prime rib</li>
 <li>Steak</li>
 <li>Turkey dinner</li>
-</random>?</template>
+</random>?
+</template>
 </category>
+
+
+
 </aiml>

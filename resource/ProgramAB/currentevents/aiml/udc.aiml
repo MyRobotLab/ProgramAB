@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
-<category><pattern>*</pattern>
-<template>unknown</template>
+<aiml version="1.0">
+
+
+<category>
+<pattern>*</pattern>
+<template>unknown
+</template>
 </category>
-<category><pattern>ISANAME *</pattern>
+
+<category>
+<pattern>ISANAME *</pattern>
 <template>false</template>
 </category>
-<category><pattern>GENDERNAME *</pattern>
+
+<category>
+<pattern>GENDERNAME *</pattern>
 <template>unknown</template>
 </category>
+
 </aiml>
