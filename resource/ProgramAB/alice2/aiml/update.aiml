@@ -29,6 +29,6 @@ Denormalize <get var="x3"/> = <denormalize><get var="x3"/></denormalize><br/></t
 <template>Program AB 0.0.6.26 beta -- AI Foundation Reference AIML 2.1 implementation</template>
 </category>
 <category><pattern>BRAIN BUILD</pattern>
-<template>Mon Aug 23 07:39:12 PDT 2021</template>
+<template>Mon Aug 23 10:25:37 PDT 2021</template>
 </category>
 </aiml>

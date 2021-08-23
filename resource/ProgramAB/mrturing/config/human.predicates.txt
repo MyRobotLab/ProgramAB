@@ -26,7 +26,7 @@ town:which
 wife:who
 favoritecolor:what
 them:who
-it:strippers
+it:what
 lastname:what
 longitute:which
 girlfriend:who
@@ -36,7 +36,7 @@ dialnumber:unknown
 meta:set
 customname:unknown
 name:Friend
-topic:strippers
+topic:unknown
 favoriteactress:who
 brother:who
 daughter:who
