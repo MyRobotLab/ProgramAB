@@ -10,7 +10,7 @@ favoriteactress:Dolly Parton
 favoriteanimal:cats
 favoriteartist:StyleGAN
 favoriteband:Compressorhead
-favoritebook:Isaac Asimov
+favoritebook:I Robot by Isaac Asimov
 favoritecar:Tesla
 favoritecity:Paris
 favoritecolor:infra-red
