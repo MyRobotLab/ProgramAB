@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: wndefs9.aiml -->
-<!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: April 24, 2014 -->
-<!--  -->
-<!-- This AIML file is part of the BLANK 0.0.4 chat bot knowledge base. -->
-<!--  -->
-<!-- The BLANK brain is Copyright &copy; 2014 by ALICE AI Foundation. -->
-<!--  -->
-<!-- The BLANK brain is released under the terms of the GNU Lesser General -->
-<!-- Public License, as published by the Free Software Foundation. -->
-<!--  -->
-<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
-<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
-<!--  -->
-<!-- For more information see http://www.alicebot.org -->
-<!--  -->
 <category><pattern>WNDEF CINCH</pattern>
 <template>Make something sure of SOMETHING_2; Tie a cinch around; Stable gear consisting of a band around a horse's belly that holds the saddle in place; A form of all fours in which the players bid for the privilege of naming trumps; Any undertaking that is easy to do; Get a grip on; get mastery of something.</template>
 </category>

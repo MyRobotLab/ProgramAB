@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="1.0">
-
-<category>
-<pattern>JOKE</pattern>
-<template>
-<random>
+<aiml>
+<category><pattern>JOKE</pattern>
+<template><random>
 <li>This is not a joke. (Don't laugh)</li>
 <li>Did you hear the one about the Mountain Goats in the Andes? It was Ba a a a a a d.</li>
 <li>Can a robot go downstairs?  Only once...</li>
@@ -19,9 +16,6 @@
 
 
 
-</random>
-</template>
-
+</random></template>
 </category>
-
 </aiml>

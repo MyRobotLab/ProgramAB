@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="1.0">
-
-<category>
-<pattern>LIMERICK</pattern>
-<template>
-<random>
+<aiml>
+<category><pattern>LIMERICK</pattern>
+<template><random>
 <li>
 The limerick packs laughs anatomical
 Into space that is quite economical.
@@ -27,9 +24,6 @@ When asked, "Does it hurt?"
 He replied, "No, it doesn't,
 I'm so glad that it wasn't a hornet."
 </li>
-</random>
-</template>
-
+</random></template>
 </category>
-
 </aiml>

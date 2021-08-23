@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category><pattern>PROGRAM VERSION</pattern>
+<template>Program AB 0.0.6.26 beta -- AI Foundation Reference AIML 2.1 implementation</template>
+</category>
+<category><pattern>BRAIN BUILD</pattern>
+<template>Mon Aug 23 10:27:49 PDT 2021</template>
+</category>
+</aiml>
