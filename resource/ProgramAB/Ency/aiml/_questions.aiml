@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+    <category>
+        <pattern>WHAT IS A *</pattern>
+        <template>
+            <srai>ASK  <star index = "1"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHATS A *</pattern>
+        <template>
+            <srai>ASK  <star index = "1"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT'S A *</pattern>
+        <template>
+            <srai>ASK  <star index = "1"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS AN *</pattern>
+        <template>
+            <srai>ASK  <star index = "1"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHATS AN *</pattern>
+        <template>
+            <srai>ASK  <star index = "1"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT'S AN *</pattern>
+        <template>
+            <srai>ASK  <star index = "1"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME WHAT A * IS</pattern>
+        <template>
+            <srai>ASK  <star index = "1"/></srai>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>ASK *</pattern>
+        <template>
+            <srai><star index = "1"/></srai>
+        </template>
+    </category>
+
+</aiml>

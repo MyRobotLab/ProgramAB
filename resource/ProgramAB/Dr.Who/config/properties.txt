@@ -1,7 +1,5 @@
 description:A.L.I.C.E. is a natural language processing chatterbot—a program that engages in a conversation with a human by applying some heuristical pattern matching rules to the human's input. It was inspired by Joseph Weizenbaum's classical ELIZA program
 shortDescription:Dr Who, is based on Alice classical ELIZA program. The organization of it's files differs a little.
-
-
 aimldirectory:aiml
 configdirectory:config
 logdirectory:logs
