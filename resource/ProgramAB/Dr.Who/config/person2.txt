@@ -1,0 +1,9 @@
+" I WAS ", " he or she was "
+" I AM " , " he or she is "
+" I " , " he or she "
+" HE WAS " , " I was "
+" SHE WAS " , " I was "
+" ME " , " him or her "
+" MY " , " his or her "
+" MYSELF " , " him or herself "
+
