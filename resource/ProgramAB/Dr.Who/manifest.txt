@@ -1,0 +1,3 @@
+description=Dr. Who chatbot
+locale=en-US
+image=bot.png
