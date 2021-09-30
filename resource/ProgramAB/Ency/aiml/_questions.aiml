@@ -13,7 +13,7 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT'S A *</pattern>
+        <pattern>WHAT S A *</pattern>
         <template>
             <srai>ASK  <star index = "1"/></srai>
         </template>
@@ -31,7 +31,7 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT'S AN *</pattern>
+        <pattern>WHAT S AN *</pattern>
         <template>
             <srai>ASK  <star index = "1"/></srai>
         </template>
