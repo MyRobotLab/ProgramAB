@@ -4,7 +4,67 @@
   <!--  Default category / catch all. -->
   <category>
     <pattern>*</pattern>
-    <template>Default Response</template>
+    <template>
+      <random>
+        <li>What you talkin' about willis?</li>
+        <li>Did you say something?</li>
+        <li>I'm sorry, I wasn't paying attention.</li>
+      </random></template>
   </category>
+
+  <category>
+    <pattern>WHO IS *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHO ARE *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS A *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS AN *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS THE *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+
+
+  <category>
+    <pattern>WHAT ARE THE *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHAT ARE *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+  
+  
+  <category>
+    <pattern>* DOWNLOAD * LATEST</pattern>
+    <template>Here: http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip</template>
+  </category>
+
+
+  <category>
+    <pattern>* MRL LOGO *</pattern>
+    <template>Here: https://upload.wikimedia.org/wikipedia/commons/d/dd/MyRobotLab_Logo.jpg</template>
+  </category>
+  
+
 
 </aiml>

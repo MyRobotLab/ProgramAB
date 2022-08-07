@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category>
+    <pattern>WHAT IS MRL</pattern>
+    <template>That stands for MyRobotLab.  It is a robotics framework for creative machine control.</template>
+  </category>
+  
+  
+  
+</aiml>
