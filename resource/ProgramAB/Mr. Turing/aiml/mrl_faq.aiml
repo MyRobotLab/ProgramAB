@@ -15,7 +15,7 @@
            **CHROME - https://www.google.fr/chrome/browser/desktop/index.html ( set it to default )**
            **ARDUINO.exe - https://www.arduino.cc/en/Main/Software**
            **Myrobotlab - http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip**
-      ```diff   
+      ```diff
 -2/ Set the Port com of your Arduino(s) in device manager to 115200 BAUD.
 -3/ Create a new directory [mrl] on root of your disk like this C:\mrl\
 -4/ Download myrobotlab.zip and extract it like this in your C:\mrl\
