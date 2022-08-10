@@ -126,4 +126,24 @@
     <pattern>* MYROBOTLAB.ZIP *</pattern>
     <template><srai><star/> DOWNLOAD <star/> LATEST</srai></template>
   </category>
+  <category>
+    <pattern>UPDATE MRL</pattern>
+    <template>it's best to reinstall fresh in a new directory, save your data/config to paste them in the new version.</template>
+  </category>
+  <category>
+    <pattern>* UPDATE MRL</pattern>
+    <template><srai>UPDATE MRL</srai></template>
+  </category>
+  <category>
+    <pattern>* UPDATE MRL *</pattern>
+    <template><srai>UPDATE MRL</srai></template>
+  </category>
+  <category>
+    <pattern>* UPDATE MYROBOTLAB</pattern>
+    <template><srai>UPDATE MRL</srai></template>
+  </category>
+  <category>
+    <pattern>* UPDATE MYROBOTLAB *</pattern>
+    <template><srai>UPDATE MRL</srai></template>
+  </category>
 </aiml>
