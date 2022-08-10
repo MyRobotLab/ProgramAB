@@ -8,7 +8,7 @@
   <category><pattern>INSTALL MRL</pattern>
     <template>
       ```diff
-- 1/install:
+-1/install:
       ```  **Java JDK 11 (64-bit) version - https://www.oracle.com/java/technologies/javase-jdk11-downloads.html**
            ( note that some Nixie functionalities will probably not work with 32 bit Windows system)
            **CHROME - https://www.google.fr/chrome/browser/desktop/index.html ( set it to default )**
@@ -48,54 +48,54 @@
     <template>Follow this tutorial
 **# Install for Myrobotlab Nixie version:**
 **# install Java version 11 ready for MRL**
-      ```diff
--sudo apt-get -y install openjdk-11-jdk
+      ```
+sudo apt-get -y install openjdk-11-jdk
       ```
 **# Setup MyRobotLab**
 **# First we need to create a directory for it to live in**
-      ```diff
--mkdir mrl
+      ```
+mkdir mrl
       ```
 **# Set the permissions on the directory for to execute**
-      ```diff
--sudo chmod a+x mrl
+      ```
+sudo chmod a+x mrl
       ```
 **# Then change into the directory**
-      ```diff
--cd mrl
+      ```
+cd mrl
       ```
 **# Download MyRobotLab software into the new directory**
 **# wget downloads a file directly from the internet.**
-      ```diff
--sudo wget build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip
+      ```
+sudo wget build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip
       ```
 **# Extract what's in the zip**
-      ```diff
--unzip myrobotlab.zip
+      ```
+unzip myrobotlab.zip
       ```
 **# Get rid of the zip**
-      ```diff
--rm myrobotlab.zip
+      ```
+rm myrobotlab.zip
       ```
 **# type “y” to accept to remove the zip file**
-      ```diff
--y
+      ```
+y
       ```
 **# Navigate into the unzipped directory (replace XXX below by version number)**
-      ```diff
--cd mrl/myrobotlab-1.1.XXX
+      ```
+cd mrl/myrobotlab-1.1.XXX
       ```
 **# Running the myrobotlab.sh file will install all services and**
 **# create all the other files we need for the install**
 **# Be patient this will take a while**
-      ```diff
--./myrobotlab.sh
+      ```
+./myrobotlab.sh
       ```
 **# Ok we are now done. We have MyRobotLab installed**
 **# To run myrobotlab the next time (replace XXX below by version number)**
-      ```diff
--cd mrl/myrobotlab-1.1.XXX
--./myrobotlab.sh
+      ```
+cd mrl/myrobotlab-1.1.XXX
+./myrobotlab.sh
       ```
     </template>
   </category>
