@@ -19,7 +19,7 @@
         -2/ Set the Port com of your Arduino(s) in device manager to 115200 BAUD.
         -3/ Create a new directory [mrl] on root of your disk like this C:\mrl\
         -4/ Download myrobotlab.zip and extract it like this in your C:\mrl\
-        -5/Double click myrobotlab.bat and wait for MRL to install and launch your Chrome browser. For Mac and Linux users, Open your terminal, set the path to your directory which contains the myrobotlab.sh file and run this line: ./myrobotlab.sh (or ask @Mr. Turing INSTALL MRL LINUX)
+        -5/Double click myrobotlab.bat and wait for MRL to install and launch your Chrome browser. For Mac and Linux users, Open your terminal, set the path to your directory which contains the myrobotlab.sh file and run this line: ./myrobotlab.sh (or ask Mr. Turing INSTALL MRL LINUX)
 
         -This is going to take a while,  you can see the status of the installation in the command prompt.
 
