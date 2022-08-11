@@ -2,25 +2,42 @@
 <aiml>
 
   <!--  InMoov category / catch all. -->
-  <category>
-    <pattern>* INMOOV</pattern>
-    <template><srai>INTRODUCTION</srai></template>
-  </category>
-  <category><pattern>INMOOV *</pattern>
-    <template><srai>INTRODUCTION</srai></template>
-  </category>
-  <category>
-    <pattern>* INMOOV *</pattern>
-    <template><srai>INTRODUCTION</srai></template>
-  </category>
-  <category>
-    <pattern>INMOOV</pattern>
-    <template><srai>INTRODUCTION</srai></template>
-  </category>
+<category>
+ <pattern>FAQ</pattern>
+  <template>
+    **Here is a list of frequent questions related to InMoov:**
+      `-What is InMoov?`(http://inmoov.fr)
+      `-What servos can we use?` (list: http://inmoov.fr/default-hardware-map/)
+      `-What power supply do we need?` (6V 50A for a standard build or a 6V 12AH battery)
+      `-How many Arduinos do we need?` (2 x Arduino Mega 2560 for a standard build, + 1 x nano Arduino for the Neopixel)
+      `-What do the Nervo Boards do?` (Makes wiring a lot easier for beginners 🙂 )
+      `-How many Nervo Boards for a complete robot?` (2 Nervo Boards)
+      `-What is a standard build?` (A build using the build instruction found on the Inmoov.fr web site)
+      `-How do I update InMoov2?` (It's best to reinstall MRL fresh in a new directory, save your data/config to paste them in the new version.)
+    </template>
+</category> 
+  
+<category>
+  <pattern>* INMOOV</pattern>
+  <template><srai>INTRODUCTION</srai></template>
+</category>
+  
+<category><pattern>INMOOV *</pattern>
+  <template><srai>INTRODUCTION</srai></template>
+</category>
+  
+<category>
+  <pattern>* INMOOV *</pattern>
+  <template><srai>INTRODUCTION</srai></template>
+</category>
+  
+<category>
+  <pattern>INMOOV</pattern>
+  <template><srai>INTRODUCTION</srai></template>
+</category>
 
-
-  <category><pattern>INTRODUCTION</pattern>
-<template><think>
+<category><pattern>INTRODUCTION</pattern>
+  <template><think>
         <set name="introduction">started</set>
       </think>
       <think>
@@ -68,15 +85,7 @@
       Very nice name, <get name="tmpname"/> is great!
       </li>
         </random>
-      Here is a list of frequent questions related to InMoov:
-      ```
-      -What is InMoov? (http://inmoov.fr)
-      -What servos can we use? (list: http://inmoov.fr/default-hardware-map/)
-      -What power supply do we need? (6V 50A for a standard build or a 6V 12AH battery)
-      -How many Arduinos do we need? (2 x Arduino Mega 2560 for a standard build, + 1 x nano Arduino for the Neopixel)
-      -What do the Nervo Boards do? (Makes wiring a lot easier for beginners 🙂 )
-      -How many Nervo Boards for a complete robot? (2 Nervo Boards)
-      -What is a standard build? (A build using the build instruction found on the Inmoov.fr web site)```
+      <srai>FAQ</srai>
   <think><set name="botname"><get name="tmpname"/></set></think>
   <think><set name="topic">default</set></think></template>
 </category></topic>
@@ -97,15 +106,7 @@
       Ok,
       </li>
         </random>
-   Here is a list of frequent questions related to InMoov:
-  ```
-      -What is InMoov? (http://inmoov.fr)
-      -What servos can we use? (list: http://inmoov.fr/default-hardware-map/)
-      -What power supply do we need? (6V 50A for a standard build or a 6V 12AH battery)
-      -How many Arduinos do we need? (2 x Arduino Mega 2560 for a standard build, + 1 x nano Arduino for the Neopixel)
-      -What do the Nervo Boards do? (Makes wiring a lot easier for beginners 🙂 )
-      -How many Nervo Boards for a complete robot? (2 Nervo Boards)
-      -What is a standard build? (A build using the build instruction found on the Inmoov.fr web site)```
+      <srai>FAQ</srai>
   <think>
     <set name="topic">default</set>
   </think></template>
@@ -117,7 +118,7 @@
   <think>
     <set name="topic">default</set>
   </think></template>
-</category></topic>
+</category></topic>  
   
 <category>
   <pattern>UPDATE INMOOV</pattern>
