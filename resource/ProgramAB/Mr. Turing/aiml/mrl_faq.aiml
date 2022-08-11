@@ -109,11 +109,10 @@ cd mrl/myrobotlab-1.1.xxx
       <srai>INSTALL MRL LINUX</srai>
     </template>
   </category>
-
   <category>
-    <pattern>*MRL*VERSION*</pattern>
+    <pattern>INSTALL MRL * LINUX</pattern>
     <template>
-      <srai>MRLVERSION</srai>
+      <srai>INSTALL MRL LINUX</srai>
     </template>
   </category>
   <category>
@@ -173,35 +172,35 @@ cd mrl/myrobotlab-1.1.xxx
   </category>
 
   <category>
-    <pattern>*MRL*VERSION*</pattern>
+    <pattern>* MRL * VERSION *</pattern>
     <template>
-      <srai>MRLVERSION</srai>
+      <srai>MRL VERSION</srai>
     </template>
   </category>
 
   <category>
-    <pattern>*VERSION*MRL*</pattern>
+    <pattern>* VERSION * MRL *</pattern>
     <template>
-      <srai>MRLVERSION</srai>
+      <srai>MRL VERSION</srai>
     </template>
   </category>
 
   <category>
-    <pattern>*LATEST*VERSION*</pattern>
+    <pattern>* LATEST * VERSION *</pattern>
     <template>
-      <srai>MRLVERSION</srai>
+      <srai>MRL VERSION</srai>
     </template>
   </category>
 
   <category>
-    <pattern>*VERSION*</pattern>
+    <pattern>* VERSION *</pattern>
     <template>
-      <srai>MRLVERSION</srai>
+      <srai>MRL VERSION</srai>
     </template>
   </category>
 
   <category>
-    <pattern>MRLVERSION</pattern>
+    <pattern>MRL VERSION</pattern>
     <template>
       The latest version of myrobotlab is <sraix><oob><mrl><service>runtime</service><method>getLatestVersion</method></mrl></oob></sraix>
       You can find it here http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip
