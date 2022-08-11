@@ -118,5 +118,38 @@
     <set name="topic">default</set>
   </think></template>
 </category></topic>
+  
+<category>
+  <pattern>UPDATE INMOOV</pattern>
+  <template>It's best to reinstall MRL fresh in a new directory, save your data/config to paste them in the new version.</template>
+</category>
+  
+<category>
+ <pattern>* UPDATE INMOOV</pattern>
+  <template>
+      <srai>UPDATE INMOOV</srai>
+    </template>
+</category>
+  
+<category>
+  <pattern>* UPDATE INMOOV *</pattern>
+    <template>
+      <srai>UPDATE INMOOV</srai>
+    </template>
+</category>
+  
+<category>
+  <pattern>* UPDATE INMOOV2</pattern>
+    <template>
+      <srai>UPDATE INMOOV</srai>
+    </template>
+</category>
+  
+<category>
+  <pattern>* UPDATE INMOOV2 *</pattern>
+    <template>
+      <srai>UPDATE MRL</srai>
+    </template>
+</category>  
 
 </aiml>
