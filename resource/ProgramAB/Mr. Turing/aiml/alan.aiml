@@ -6,9 +6,12 @@
     <pattern>*</pattern>
     <template>
       <random>
-        <li>What you talkin' about willis?</li>
+        <li>What you talkin' about Denniston?</li>
         <li>Did you say something?</li>
         <li>I'm sorry, I wasn't paying attention.</li>
+        <li>Sorry, I'm trying to decode what your saying.</li>
+        <li>Quite frankly, I have no idea what your talking about.</li>
+        <li>That seems a bit off topic.</li>
       </random></template>
   </category>
 
@@ -19,6 +22,11 @@
 
   <category>
     <pattern>WHO ARE *</pattern>
+    <template><sraix><star/></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHO ARE THE *</pattern>
     <template><sraix><star/></sraix></template>
   </category>
 
@@ -65,6 +73,4 @@
     <template>Here: https://upload.wikimedia.org/wikipedia/commons/d/dd/MyRobotLab_Logo.jpg</template>
   </category>
   
-
-
 </aiml>

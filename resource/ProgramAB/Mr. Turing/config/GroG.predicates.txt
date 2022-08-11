@@ -7,6 +7,7 @@ sign:which
 husband:who
 favoriteicecream:what
 mother:who
+tmpname:Work dash E
 son:who
 favoriteactor:who
 province:which
@@ -35,8 +36,8 @@ birthplace:where
 dialnumber:unknown
 meta:set
 customname:unknown
-name:bonehead
-topic:unknown
+name:GroG
+topic:introduction
 favoriteactress:who
 brother:who
 daughter:who
@@ -59,9 +60,11 @@ niece:who
 jsenabled:true
 street:which
 cat:what
+questionfirstinit:So, his name is Work dash E , say yes or no
 favoritebook:what
 email:what
 favoritecar:what
+introduction:started
 orientation:unknown
 address:where
 newpattern:NORESP
@@ -70,6 +73,7 @@ equalto:false
 favoritemovie:what
 middlename:what
 religion:unknown
+botname:Work dash E
 newcontact:unknown
 voicemailnumber:unknown
 there:where

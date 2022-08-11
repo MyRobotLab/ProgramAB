@@ -5,7 +5,16 @@
     <pattern>WHAT IS MRL</pattern>
     <template>That stands for MyRobotLab.  It is a robotics framework for creative machine control.</template>
   </category>
-  <category><pattern>INSTALL MRL</pattern>
+
+
+  <category>
+    <pattern>* WHAT IS MYROBOTLAB</pattern>
+    <template>MyRobotLab is a framework, which useful robotic services run in.  Services are like lego blocks, they are  designed to fit together in a framework, but give you the flexibility to build what you want out of them..</template>
+  </category>
+
+
+  <category>
+    <pattern>INSTALL MRL</pattern>
     <template>
       ```diff
 -1/install:
@@ -26,102 +35,113 @@
   </category>
   <category>
     <pattern>* INSTALL MYROBOTLAB</pattern>
-    <template><srai>INSTALL MRL</srai></template>
+    <template>
+      <srai>INSTALL MRL</srai>
+    </template>
   </category>
   <category>
     <pattern>* INSTALL MRL</pattern>
-    <template><srai>INSTALL MRL</srai></template>
+    <template>
+      <srai>INSTALL MRL</srai>
+    </template>
   </category>
   <category>
     <pattern>* INSTALL MRL *</pattern>
-    <template><srai>INSTALL MRL</srai></template>
+    <template>
+      <srai>INSTALL MRL</srai>
+    </template>
   </category>
   <category>
     <pattern>* INSTALL MRL * WINDOWS</pattern>
-    <template><srai>INSTALL MRL</srai></template>
+    <template>
+      <srai>INSTALL MRL</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* INSTALL MRL * LINUX</pattern>
+    <template>
+      <srai>INSTALL MRL LINUX</srai>
+    </template>
   </category>
   <category>
     <pattern>* INSTALL MYROBOTLAB * WINDOWS</pattern>
-    <template><srai>INSTALL MRL</srai></template>
+    <template>
+      <srai>INSTALL MRL</srai>
+    </template>
   </category>
-  <category><pattern>INSTALL MRL LINUX</pattern>
-    <template>Follow this tutorial
-**# Install for Myrobotlab Nixie version:**
-**# install Java version 11 ready for MRL**
-      ```
+  <category>
+    <pattern>INSTALL MRL LINUX</pattern>
+    <template>Use this script
+```bash
+# install for myrobotlab nixie version:
+# install java version 11 ready for MmrlRL
 sudo apt-get -y install openjdk-11-jdk
-      ```
-**# Setup MyRobotLab**
-**# First we need to create a directory for it to live in**
-      ```
-mkdir mrl
-      ```
-**# Set the permissions on the directory for to execute**
-      ```
-sudo chmod a+x mrl
-      ```
-**# Then change into the directory**
-      ```
-cd mrl
-      ```
-**# Download MyRobotLab software into the new directory**
-**# wget downloads a file directly from the internet.**
-      ```
-sudo wget build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip
-      ```
-**# Extract what's in the zip**
-      ```
+
+# download myrobotlab software into the new directory
+# wget downloads a file directly from the internet.
+wget build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip
+
+# extract what's in the zip
 unzip myrobotlab.zip
-      ```
-**# Get rid of the zip**
-      ```
-rm myrobotlab.zip
-      ```
-**# type “y” to accept to remove the zip file**
-      ```
-y
-      ```
-**# Navigate into the unzipped directory (replace XXX below by version number)**
-      ```
-cd mrl/myrobotlab-1.1.XXX
-      ```
-**# Running the myrobotlab.sh file will install all services and**
-**# create all the other files we need for the install**
-**# Be patient this will take a while**
-      ```
+
+# navigate into the unzipped directory (replace xxx below by version number)
+cd mrl/myrobotlab-1.1.xxx
 ./myrobotlab.sh
-      ```
-**# Ok we are now done. We have MyRobotLab installed**
-**# To run myrobotlab the next time (replace XXX below by version number)**
-      ```
-cd mrl/myrobotlab-1.1.XXX
-./myrobotlab.sh
-      ```
+
+```
     </template>
   </category>
   <category>
     <pattern>* INSTALL MYROBOTLAB * LINUX *</pattern>
-    <template><srai>INSTALL MRL LINUX</srai></template>
+    <template>
+      <srai>INSTALL MRL LINUX</srai>
+    </template>
   </category>
   <category>
     <pattern>* INSTALL MRL * LINUX *</pattern>
-    <template><srai>INSTALL MRL LINUX</srai></template>
+    <template>
+      <srai>INSTALL MRL LINUX</srai>
+    </template>
   </category>
   <category>
     <pattern>* INSTALL MRL * LINUX</pattern>
-    <template><srai>INSTALL MRL LINUX</srai></template>
+    <template>
+      <srai>INSTALL MRL LINUX</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>*MRL*VERSION*</pattern>
+    <template>
+      <srai>MRLVERSION</srai>
+    </template>
   </category>
   <category>
     <pattern>MYROBOTLAB.ZIP *</pattern>
-    <template><srai><star/> DOWNLOAD <star/> LATEST</srai></template>
+    <template>
+      <srai>
+        <star/>
+ DOWNLOAD <star/>
+ LATEST</srai>
+    </template>
   </category>
   <category>
     <pattern>* MYROBOTLAB.ZIP</pattern>
-    <template><srai><star/> DOWNLOAD <star/> LATEST</srai></template>
+    <template>
+      <srai>
+        <star/>
+ DOWNLOAD <star/>
+ LATEST</srai>
+    </template>
   </category>
   <category>
     <pattern>* MYROBOTLAB.ZIP *</pattern>
-    <template><srai><star/> DOWNLOAD <star/> LATEST</srai></template>
+    <template>
+      <srai>
+        <star/>
+ DOWNLOAD <star/>
+ LATEST</srai>
+    </template>
   </category>
   <category>
     <pattern>UPDATE MRL</pattern>
@@ -129,18 +149,64 @@ cd mrl/myrobotlab-1.1.XXX
   </category>
   <category>
     <pattern>* UPDATE MRL</pattern>
-    <template><srai>UPDATE MRL</srai></template>
+    <template>
+      <srai>UPDATE MRL</srai>
+    </template>
   </category>
   <category>
     <pattern>* UPDATE MRL *</pattern>
-    <template><srai>UPDATE MRL</srai></template>
+    <template>
+      <srai>UPDATE MRL</srai>
+    </template>
   </category>
   <category>
     <pattern>* UPDATE MYROBOTLAB</pattern>
-    <template><srai>UPDATE MRL</srai></template>
+    <template>
+      <srai>UPDATE MRL</srai>
+    </template>
   </category>
   <category>
     <pattern>* UPDATE MYROBOTLAB *</pattern>
-    <template><srai>UPDATE MRL</srai></template>
+    <template>
+      <srai>UPDATE MRL</srai>
+    </template>
   </category>
+
+  <category>
+    <pattern>*MRL*VERSION*</pattern>
+    <template>
+      <srai>MRLVERSION</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>*VERSION*MRL*</pattern>
+    <template>
+      <srai>MRLVERSION</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>*LATEST*VERSION*</pattern>
+    <template>
+      <srai>MRLVERSION</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>*VERSION*</pattern>
+    <template>
+      <srai>MRLVERSION</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>MRLVERSION</pattern>
+    <template>
+      The latest version of myrobotlab is <sraix><oob><mrl><service>runtime</service><method>getLatestVersion</method></mrl></oob></sraix>
+      You can find it here http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip
+      I hope this helps...
+    </template>
+  </category>
+
 </aiml>
