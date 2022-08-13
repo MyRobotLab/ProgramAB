@@ -60,8 +60,8 @@
     <pattern>WHAT ARE *</pattern>
     <template><sraix><star/></sraix></template>
   </category>
-  
-  
+
+
   <category>
     <pattern>* DOWNLOAD * LATEST</pattern>
     <template>Here: http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip</template>

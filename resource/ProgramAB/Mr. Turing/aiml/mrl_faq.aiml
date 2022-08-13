@@ -200,6 +200,20 @@ cd mrl/myrobotlab-1.1.xxx
   </category>
 
   <category>
+    <pattern>WHAT IS THE LATEST VERSION OF MRL</pattern>
+    <template>
+      <srai>MRL VERSION</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS THE LATEST VERSION OF MYROBOTLAB</pattern>
+    <template>
+      <srai>MRL VERSION</srai>
+    </template>
+  </category>
+
+  <category>
     <pattern>MRL VERSION</pattern>
     <template>
       The latest version of myrobotlab is <sraix><oob><mrl><service>runtime</service><method>getLatestVersion</method></mrl></oob></sraix>

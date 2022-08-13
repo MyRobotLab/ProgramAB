@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+ <category>
+    <pattern>* YOUR BRAIN</pattern>
+    <template>
+      <srai>* CAN I PROGRAM YOUR BRAIN</srai>
+    </template>
+  </category>
+
+ <category>
+    <pattern>CAN I PROGRAM YOUR BRAIN</pattern>
+    <template>
+      <srai>* CAN I PROGRAM YOUR BRAIN</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* PROGRAM *</pattern>
+    <template>
+      <srai>* CAN I PROGRAM YOUR BRAIN</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* CAN I PROGRAM YOUR BRAIN</pattern>
+    <template>
+    My brain is primarily composed of AIML.  AIML is a structured format which allows pattern matching of
+    text and responses in the form of templates.
+
+    You also might be interested in AIML.
+
+    A simple example follows:
+
+    ```xml
+    &lt;category&gt;
+      &lt;pattern&gt;WHAT IS YOUR NAME&lt;/pattern&gt;
+      &lt;template&gt;My name is Michael N.S Evanious.&lt;/template&gt;
+    &lt;/category&gt;
+
+    ```
+
+    https://en.wikipedia.org/wiki/AIML
+    https://www.tutorialspoint.com/aiml/index.htm
+
+    hope this helps !
+    
+    </template>
+  </category>
+
+</aiml>

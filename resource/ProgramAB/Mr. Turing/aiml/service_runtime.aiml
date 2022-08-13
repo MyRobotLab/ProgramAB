@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>WHAT KIND OF COMPUTER ARE YOU RUNNING ON</pattern>
+    <template>
+      <srai>COMPUTER</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHAT * COMPUTER * ON</pattern>
+    <template>
+      <srai>COMPUTER</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>COMPUTER</pattern>
+    <template>
+      I am currently running on <sraix><oob><mrl><service>runtime</service><method>getPlatformInfo</method></mrl></oob></sraix>
+      And all my circuits are running perfectly
+    </template>
+  </category>
+
+  <category>
+    <pattern>HOW LONG HAVE YOU BEEN AWAKE</pattern>
+    <template>I've been awake for <sraix><oob><mrl><service>runtime</service><method>getUptime</method></mrl></oob></sraix></template>
+  </category>
+
+  <category>
+    <pattern>HOW LONG HAVE YOU BEEN UP</pattern>
+    <template>I've been up for <sraix><oob><mrl><service>runtime</service><method>getUptime</method></mrl></oob></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHAT * COMPUTER ARE YOU</pattern>
+    <template><sraix><oob><mrl><service>runtime</service><method>getPlatformInfo</method></mrl></oob></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHAT * COMPUTER ARE YOU *</pattern>
+        <template>
+          <srai>WHAT * COMPUTER ARE YOU</srai>
+        </template>
+  </category>
+
+  <category>
+    <pattern>WHAT * COMPUTER IS * RUNNING ON</pattern>
+        <template>
+          <srai>WHAT * COMPUTER ARE YOU</srai>
+        </template>
+  </category>
+</aiml>

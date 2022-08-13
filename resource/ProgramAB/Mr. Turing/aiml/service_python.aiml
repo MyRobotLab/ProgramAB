@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+ <category>
+    <pattern>CAN I PROGRAM YOU</pattern>
+    <template>
+      <srai>* CAN I PROGRAM YOU</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* PROGRAM *</pattern>
+    <template>
+      <srai>* CAN I PROGRAM YOU</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* CAN I PROGRAM YOU</pattern>
+    <template>Yes, you might be interested in the following to learn about Python 2.7
+
+https://docs.python.org/2.7/contents.html
+https://www.codecademy.com/learn/learn-python or
+https://www.learnpython.org/ or
+https://www.coursera.org/learn/python-crash-course
+    
+    MyRobotLab uses Jython which is equivalent to Python 2.7 for one of its programming interfaces.
+    You also might be interested in AIML, since I am an AIML based
+
+    https://en.wikipedia.org/wiki/AIML
+    https://www.tutorialspoint.com/aiml/index.htm
+
+    hope this helps !
+    
+    </template>
+  </category>
+
+</aiml>
