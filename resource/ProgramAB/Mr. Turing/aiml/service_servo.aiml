@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category>
+    <pattern>* WHAT IS A SERVO</pattern>
+    <template>
+      <srai>WHAT IS A SERVO</srai>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>WHAT IS A SERVO</pattern>
+    <template>
+      <set name = "servo"> servo </set>
+
+      A hobby servo is a small motor which can be controlled by pulse width modulation.  Most servos can move 180 degrees.  
+      They can be controlled by an Arduino or other microcontroller.
+
+      In MyRobotLab a servo can be controlled by a small Python script. 
+      Here is an example:
+
+      ```python
+
+        servo = Runtime.start('servo','Servo')
+        servo.moveTo(10)  # move to position 10
+        sleep(1)          # wait for one second
+        servo.moveTo(100) # move to position 100
+
+      ```
+
+      More info here:
+       https://en.wikipedia.org/wiki/Servo_control#:~:text=Small%20hobby%20servos%20(often%20called,width%2C%20and%20the%20repetition%20rate.
+    </template>
+  </category>
+
+</aiml>
