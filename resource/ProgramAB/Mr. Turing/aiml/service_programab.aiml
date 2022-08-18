@@ -8,6 +8,13 @@
     </template>
   </category>
 
+  <category>
+    <pattern>WHAT IS AIML</pattern>
+    <template>
+      <srai>* CAN I PROGRAM YOUR BRAIN</srai>
+    </template>
+  </category>
+
  <category>
     <pattern>CAN I PROGRAM YOUR BRAIN</pattern>
     <template>
@@ -45,6 +52,113 @@
 
     hope this helps !
     
+    </template>
+  </category>
+
+<category>
+<pattern>WHAT IS A TOPIC</pattern>
+<template>
+<srai>* WHAT IS A TOPIC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* WHAT IS A TOPIC</pattern>
+<template>
+&lt;topic&gt; Tag is used in AIML to store a context so that later conversation can be done based on that context. Usually, &lt;topic&gt; tag is used in Yes/No type conversation. It helps AIML to search categories written within the context of the topic.
+
+Syntax
+Define a topic using &lt;set&gt; tag
+
+```xml
+&lt;template&gt;
+&lt;set name = &quot;topic&quot;&gt; topic-name &lt;/set&gt;
+&lt;/template&gt;
+```
+Define the category using &lt;topic&gt; tag
+```xml
+&lt;topic name = &quot;topic-name&quot;&gt;
+   &lt;category&gt;
+      ...
+   &lt;/category&gt;     
+&lt;/topic&gt;
+```
+For example, consider the following conversation.
+
+Human: let discuss movies
+Robot: Yes movies
+Human: Comedy movies are nice to watch
+Robot: Watching good movie refreshes our minds.
+Human: I like watching comedy
+Robot: I too like watching comedy.
+Here bot responds taking &quot;movie&quot; as the topic.
+
+</template>
+
+</category>
+
+ <category>
+    <pattern>SHUTUP</pattern>
+    <template>
+      <srai>GO TO SLEEP</srai>
+    </template>
+</category>
+
+ <category>
+    <pattern>* SHUTUP</pattern>
+    <template>
+      <srai>GO TO SLEEP</srai>
+    </template>
+</category>
+
+ <category>
+    <pattern>* SHUTUP *</pattern>
+    <template>
+      <srai>GO TO SLEEP</srai>
+    </template>
+</category>
+
+
+ <category>
+    <pattern>SHUT UP</pattern>
+    <template>
+      <srai>GO TO SLEEP</srai>
+    </template>
+</category>
+
+ <category>
+    <pattern>* SHUT UP</pattern>
+    <template>
+      <srai>GO TO SLEEP</srai>
+    </template>
+</category>
+
+ <category>
+    <pattern>BE QUIET</pattern>
+    <template>
+      <srai>GO TO SLEEP</srai>
+    </template>
+</category>
+
+ <category>
+    <pattern>* BE QUIET</pattern>
+    <template>
+      <srai>GO TO SLEEP</srai>
+    </template>
+</category>
+
+ <category>
+    <pattern>* GO TO SLEEP</pattern>
+    <template>
+      <srai>GO TO SLEEP</srai>
+    </template>
+</category>
+
+ <category>
+    <pattern>GO TO SLEEP</pattern>
+    <template>
+      OK, I will sleep..........
+      <sraix><oob><mrl><service>brain</service><method>sleep</method></mrl></oob></sraix>
     </template>
   </category>
 
