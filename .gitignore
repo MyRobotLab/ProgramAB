@@ -90,3 +90,6 @@ resource/ProgramAB/Work-E
 
 # predicates
 resource/ProgramAB/config/*.predicates.txt
+resource/ProgramAB/Alice/config/*.predicates.txt
+resource/ProgramAB/Ency/config/*.predicates.txt
+resource/ProgramAB/Mr. Turing/config/*.predicates.txt
