@@ -87,3 +87,6 @@ nb-configuration.xml
 
 
 resource/ProgramAB/Work-E
+
+# predicates
+resource/ProgramAB/config/*.predicates.txt
