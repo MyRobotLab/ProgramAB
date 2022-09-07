@@ -121,9 +121,17 @@ pipeline {
                '''
 
          } // sshagent
-    } // success
+         
+         discordSend description: "ProgramAB Build", footer: "worky !", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1015707773260005388/1i6svmKMHYKAFbTXBgen_4CClypYpeqg4WEBMFnc-46Vmf1TNWCxW-ASgDE7mDkkix3u"
 
-    discordSend description: "ProgramAB Build", footer: "blah blah", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1015707773260005388/1i6svmKMHYKAFbTXBgen_4CClypYpeqg4WEBMFnc-46Vmf1TNWCxW-ASgDE7mDkkix3u"
+    } // success
+   aborted {
+      discordSend description: "ProgramAB Build", footer: "abort abort !", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1015707773260005388/1i6svmKMHYKAFbTXBgen_4CClypYpeqg4WEBMFnc-46Vmf1TNWCxW-ASgDE7mDkkix3u"
+   }
+
+   unsuccessful {
+      discordSend description: "ProgramAB Build", footer: "noWorky !", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1015707773260005388/1i6svmKMHYKAFbTXBgen_4CClypYpeqg4WEBMFnc-46Vmf1TNWCxW-ASgDE7mDkkix3u"
+   }
 
   } // post
 } // pipeline
