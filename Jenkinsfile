@@ -98,7 +98,7 @@ pipeline {
       }
 */      
 
-      stage('build') {
+      stage('discord') {
          steps {
             discordSend description: "ProgramAB Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1015707773260005388/1i6svmKMHYKAFbTXBgen_4CClypYpeqg4WEBMFnc-46Vmf1TNWCxW-ASgDE7mDkkix3u"
          }
