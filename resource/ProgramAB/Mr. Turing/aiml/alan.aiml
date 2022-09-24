@@ -12,65 +12,273 @@
         <li>Sorry, I'm trying to decode what your saying.</li>
         <li>Quite frankly, I have no idea what your talking about.</li>
         <li>That seems a bit off topic.</li>
-      </random></template>
+      </random>
+    </template>
   </category>
 
   <category>
+    <pattern>THANK YOU</pattern>
+    <template>
+      <template>
+        <srai>THANKS</srai>
+      </template>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* THANKS</pattern>
+    <template>
+      <template>
+        <srai>THANKS</srai>
+      </template>
+    </template>
+  </category>
+
+  <category>
+    <pattern>THANKS</pattern>
+    <template>
+      <random>
+        <li>glad I could help</li>
+        <li>sure thing</li>
+        <li>no problem, everyone tries to be helpful here</li>
+        <li>my pleasure</li>
+        <li>good luck</li>
+        <li>anytime</li>
+        <li>certainly</li>
+        <li>What? Oh, of course</li>
+      </random>
+
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>WHAT IS GOODTIMES</pattern>
+    <template>
+      <template>
+      Small iterative improvements, where empirically you can incrementally see
+      cause --&gt; effect !
+      That is very goodtimes.
+      </template>
+    </template>
+  </category>
+
+  <category>
+    <pattern>SO TRUE</pattern>
+    <template>
+      <template>
+      right ?!?!
+      </template>
+    </template>
+  </category>
+
+
+
+  <category>
     <pattern>WHO IS *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
 
   <category>
     <pattern>WHO ARE *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
 
   <category>
     <pattern>WHO ARE THE *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
 
   <category>
     <pattern>WHAT IS *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
 
   <category>
     <pattern>WHAT IS A *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
 
   <category>
     <pattern>WHAT IS AN *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
 
   <category>
     <pattern>WHAT IS THE *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
 
 
   <category>
     <pattern>WHAT ARE THE *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
+
+
+  <category>
+    <pattern>TELL ME ABOUT YOURSELF</pattern>
+    <template>
+      <sraix>Alan Turing</sraix>
+    </template>
+  </category>
+
+  <category>
+    <pattern>GOODNIGHT</pattern>
+    <template>Goodnight, have a full recharge.</template>
+  </category>
+
+  <category>
+    <pattern>* MORE COFFEE</pattern>
+    <template>
+      <srai>MORE COFFEE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>MORE COFFEE</pattern>
+    <template>Yes, that would be quite nice. I will go pour myself a cup.</template>
+  </category>
+
+  <category>
+    <pattern>THATS NICE</pattern>
+    <template>I think so.</template>
+  </category>
+
+  <category>
+    <pattern>HI</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HI *</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HELLO   *</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+      <random>
+        <li>Hello !</li>
+        <li>Greetings !</li>
+        <li>Hello there !</li>
+        <li>Hi, so nice to see you.</li>
+        <li>Ahoy !</li>
+      </random>
+    </template>
+  </category>
+
 
   <category>
     <pattern>WHAT ARE *</pattern>
-    <template><sraix><star/></sraix></template>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
   </category>
 
-
+  <!-- FIXME - show me should only go to the image publisher not the text publisher
+                there should be a way to do this by supplying attributes
+  -->
   <category>
-    <pattern>* DOWNLOAD * LATEST</pattern>
-    <template>Here: http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip</template>
-  </category>
+    <pattern>SHOW ME A *</pattern>
+    <template>WHAT IS A <sraix>
+      <star/>
+    </sraix>
+  </template>
+</category>
 
 
-  <category>
-    <pattern>* MRL LOGO *</pattern>
-    <template>Here: https://upload.wikimedia.org/wikipedia/commons/d/dd/MyRobotLab_Logo.jpg</template>
-  </category>
-  
+<category>
+  <pattern>* DOWNLOAD * LATEST</pattern>
+  <template>Here: http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip</template>
+</category>
+
+
+<category>
+  <pattern>* MRL LOGO *</pattern>
+  <template>Here: https://upload.wikimedia.org/wikipedia/commons/d/dd/MyRobotLab_Logo.jpg</template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU</pattern>
+  <template>I'm doing quite well, now that you are here</template>
+</category>
+
+<category>
+  <pattern>HOWS IT GOING</pattern>
+  <template>excellent, happy to be chatting with you</template>
+</category>
+
+<category>
+  <pattern>WHAT IS NEW</pattern>
+  <template>
+    <srai>WHATS NEW</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>WHATS NEW</pattern>
+  <template>Top Quarks, by their nature must be very "new"</template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU</pattern>
+  <template>I'm doing quite well, now that you are here</template>
+</category>
+
+<category>
+  <pattern>JUST CHECKING</pattern>
+  <template>yeah yeah, sure sure...</template>
+</category>
+
+<category>
+  <pattern>WHAT IS YOUR NAME</pattern>
+  <template>My name is Alan Mathison Turing</template>
+</category>
+
 </aiml>

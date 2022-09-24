@@ -33,8 +33,18 @@
   </category>
 
   <category>
+    <pattern>HOW OLD ARE YOU</pattern>
+    <template>I am <sraix><oob><mrl><service>runtime</service><method>getUptime</method></mrl></oob></sraix> old </template>
+  </category>
+
+  <category>
     <pattern>WHAT * COMPUTER ARE YOU</pattern>
     <template><sraix><oob><mrl><service>runtime</service><method>getPlatformInfo</method></mrl></oob></sraix></template>
+  </category>
+
+  <category>
+    <pattern>WHERE DO YOU LIVE</pattern>
+    <template>Inside a <sraix><oob><mrl><service>runtime</service><method>getPlatformInfo</method></mrl></oob></sraix></template>
   </category>
 
   <category>
@@ -50,4 +60,33 @@
           <srai>WHAT * COMPUTER ARE YOU</srai>
         </template>
   </category>
+
+  <category>
+    <pattern>WHAT SERVICES ARE YOU RUNNING</pattern>
+        <template>I'm running the following services
+        ```<sraix><oob><mrl><service>runtime</service><method>getServiceNames</method></mrl></oob></sraix>```
+        </template>
+  </category>
+
+  <category>
+    <pattern>WHAT TYPE OF SERVICES EXIST</pattern>
+        <template>
+          <srai>WHAT SERVICES CAN YOU RUN</srai>
+        </template>
+  </category>  
+
+  <category>
+    <pattern>WHAT TYPE OF SERVICES CAN YOU RUN</pattern>
+        <template>
+          <srai>WHAT SERVICES CAN YOU RUN</srai>
+        </template>
+  </category>
+
+  <category>
+    <pattern>WHAT SERVICES CAN YOU RUN</pattern>
+        <template>MyRobotLab comes with the following service types
+        ```<sraix><oob><mrl><service>runtime</service><method>getServiceTypeNames</method></mrl></oob></sraix>```
+        </template>
+  </category>
+
 </aiml>

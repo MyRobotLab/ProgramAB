@@ -213,12 +213,88 @@ cd mrl/myrobotlab-1.1.xxx
     </template>
   </category>
 
+
+  <category>
+    <pattern>WHERE CAN I FIND MYROBOTLAB *</pattern>
+    <template>
+      <srai>MRL VERSION</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHERE CAN I FIND MYROBOTLAB.ZIP</pattern>
+    <template>
+      <srai>MRL VERSION</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* IVY2 DIRECTORY</pattern>
+    <template>
+      <srai>IVY2 DIRECTORY</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* IVY DIRECTORY</pattern>
+    <template>
+      <srai>IVY2 DIRECTORY</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>IVY2 DIRECTORY</pattern>
+    <template>
+    The ivy2 directory is a dot directory. It caches all the dependencies
+    required by myrobotlab.  Sometimes, you may need to delete it.
+    First stop myrobotlab.
+    On Linux you would type the following:    
+    ```bash
+    rm -rf ~/.ivy2```
+    then you would start myrobotlab.sh and be prepared to wait as all the dependencies will be downloaded once      
+    </template>
+  </category>
+  
+
+
   <category>
     <pattern>MRL VERSION</pattern>
     <template>
       The latest version of myrobotlab is <sraix><oob><mrl><service>runtime</service><method>getLatestVersion</method></mrl></oob></sraix>
       You can find it here http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip
       I hope this helps...
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>* EXAMPLE OF *</pattern>
+    <template>
+      <srai>EXAMPLE FOR *</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* EXAMPLE FOR *</pattern>
+    <template>
+      <srai>EXAMPLE FOR *</srai>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>EXAMPLE FOR *</pattern>
+    <template>
+    I found this example for you 
+```python
+<sraix><oob><mrl><service>runtime</service><method>getServiceExample</method><param><star/></param></mrl></oob></sraix>
+```</template>
+  </category>
+
+  <category>
+    <pattern>* WHERE * PIN *</pattern>
+    <template>
+      This link might help http://inmoov.fr/default-hardware-map/
     </template>
   </category>
 
