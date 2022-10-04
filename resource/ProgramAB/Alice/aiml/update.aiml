@@ -22,16 +22,16 @@
 <set var="x2">drwallace at gmail dot com</set>
 <set var="x3">Lparen 3 star 7 point 3 rparen slash 4</set>
 </think>
-Denormalize <get var="x1"/> = <denormalize><get var="x1"/></denormalize><br/>
-Denormalize <get var="x2"/> = <denormalize><get var="x2"/></denormalize><br/>
-Denormalize <get var="x3"/> = <denormalize><get var="x3"/></denormalize><br/></template>
+Denormalize <get var="x1"/> = <denormalize><get var="x1"/></denormalize>
+Denormalize <get var="x2"/> = <denormalize><get var="x2"/></denormalize>
+Denormalize <get var="x3"/> = <denormalize><get var="x3"/></denormalize></template>
 </category>
 <category><pattern>TEST HTML</pattern>
 <template><h1>A.L.I.C.E. 2.0</h1> <h2><em>Release</em> 0.9.1</h2></template>
 </category>
 <category><pattern>TEST HTML 2</pattern>
 <template><h2><b>SPACE</b> <em>between</em> <b>Words</b></h2>
-<b>SPACE</b> <em>between</em> <b>Words</b><br/>
+<b>SPACE</b> <em>between</em> <b>Words</b>
 <p>This is a paragraph.  Second sentence.  Third sentence.</p>
 <p>New paragraph. <em>Another sentence.</em>  And another</p></template>
 </category>

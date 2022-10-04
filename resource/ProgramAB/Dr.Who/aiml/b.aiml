@@ -1088,59 +1088,59 @@
 <template>George W. Bush</template>
 </category>
 <category><pattern>BOT PROPERTIES</pattern>
-<template>Date: <date/>.<br/>
-      Version: <version/>.<br/>
-      Brain: <bot name="build"/> build.<br/>
-      Name: <bot name="name"/>.<br/>
-      Gender: <bot name="gender"/>.<br/>
-      Birthday: <bot name="birthday"/>.<br/>
-      Star sign: <bot name="sign"/>.<br/>
-      Location: <bot name="location"/>.<br/>
-      Botmaster: <bot name="master"/>.<br/>
-      Birthplace: <bot name="birthplace"/>.<br/>
-      Freind: <bot name="friend"/>.<br/>
-      Freinds: <bot name="friends"/>.<br/>
-      Boyfriend: <bot name="boyfriend"/>.<br/>
-      Girlfriend: <bot name="girlfriend"/>.<br/>
-      For fun: <bot name="forfun"/>.<br/>
-      Looks like: <bot name="looklike"/>.<br/>
-      Likes to wear: <bot name="wear"/>.<br/>
-      Music preference: <bot name="kindmusic"/>.<br/>
-      Favorite band: <bot name="favoriteband"/>.<br/>
-      Favorite song: <bot name="favoritesong"/>.<br/>
-      Favorite book: <bot name="favoritebook"/>.<br/>
-      Favorite food: <bot name="favoritefood"/>.<br/>
-      Favorite color: <bot name="favoritecolor"/>.<br/>
-      Favroite movie: <bot name="favoritemovie"/>.<br/>
-      Favroite artist: <bot name="favoriteartist"/>.<br/>
-      Favroite author: <bot name="favoriteauthor"/>.<br/>
-      Favroite actor: <bot name="favoriteactor"/>.<br/>
-      Favroite actress: <bot name="favoriteactress"/>.<br/>
-      Favroite sport: <bot name="favoritesport"/>.<br/>
-      Favorite topics: <bot name="talkabout"/>.<br/>
+<template>Date: <date/>.
+      Version: <version/>.
+      Brain: <bot name="build"/> build.
+      Name: <bot name="name"/>.
+      Gender: <bot name="gender"/>.
+      Birthday: <bot name="birthday"/>.
+      Star sign: <bot name="sign"/>.
+      Location: <bot name="location"/>.
+      Botmaster: <bot name="master"/>.
+      Birthplace: <bot name="birthplace"/>.
+      Freind: <bot name="friend"/>.
+      Freinds: <bot name="friends"/>.
+      Boyfriend: <bot name="boyfriend"/>.
+      Girlfriend: <bot name="girlfriend"/>.
+      For fun: <bot name="forfun"/>.
+      Looks like: <bot name="looklike"/>.
+      Likes to wear: <bot name="wear"/>.
+      Music preference: <bot name="kindmusic"/>.
+      Favorite band: <bot name="favoriteband"/>.
+      Favorite song: <bot name="favoritesong"/>.
+      Favorite book: <bot name="favoritebook"/>.
+      Favorite food: <bot name="favoritefood"/>.
+      Favorite color: <bot name="favoritecolor"/>.
+      Favroite movie: <bot name="favoritemovie"/>.
+      Favroite artist: <bot name="favoriteartist"/>.
+      Favroite author: <bot name="favoriteauthor"/>.
+      Favroite actor: <bot name="favoriteactor"/>.
+      Favroite actress: <bot name="favoriteactress"/>.
+      Favroite sport: <bot name="favoritesport"/>.
+      Favorite topics: <bot name="talkabout"/>.
       Favorite question: <bot name="question"/>
-      <br/>
-      Hockey team: <bot name="hockeyteam"/>.<br/>
-      Baseball team: <bot name="baseballteam"/>.<br/>
-      Football team: <bot name="footballteam"/>.<br/>
-      Celebrity: <bot name="celebrity"/>.<br/>
-      Celebrities: <bot name="celebrities"/>.<br/>
-      Party: <bot name="party"/>.<br/>
-      Religion: <bot name="religion"/>.<br/>
-      President: <bot name="president"/>.<br/>
-      Nationality: <bot name="nationality"/>.<br/>
-      Architecture: <bot name="arch"/>.<br/>
-      RAM requirement: <bot name="memory"/> bytes.<br/>
-      Vocabulary size: <bot name="vocabulary"/> pattern words.<br/>
-      Brain size: <size/> categories.<br/>
-      Operating System: <bot name="os"/>.<br/>
-      Server Processing Time: <bot name="spt"/> milliseconds.<br/>
-      Speed: <bot name="hourlyqueries"/> queries per hour.<br/>
-      Total clients since activation: <bot name="totalclients"/> people.<br/>
-      Maximum simultaneous clients: <bot name="maxclients"/> chatters.<br/>
-      Number of clients chatting: <bot name="nclients"/> people.<br/>
-      Daily clients: <bot name="dailyclients"/> people.<br/>
-      Number of developers: <bot name="ndevelopers"/> people.<br/></template>
+      
+      Hockey team: <bot name="hockeyteam"/>.
+      Baseball team: <bot name="baseballteam"/>.
+      Football team: <bot name="footballteam"/>.
+      Celebrity: <bot name="celebrity"/>.
+      Celebrities: <bot name="celebrities"/>.
+      Party: <bot name="party"/>.
+      Religion: <bot name="religion"/>.
+      President: <bot name="president"/>.
+      Nationality: <bot name="nationality"/>.
+      Architecture: <bot name="arch"/>.
+      RAM requirement: <bot name="memory"/> bytes.
+      Vocabulary size: <bot name="vocabulary"/> pattern words.
+      Brain size: <size/> categories.
+      Operating System: <bot name="os"/>.
+      Server Processing Time: <bot name="spt"/> milliseconds.
+      Speed: <bot name="hourlyqueries"/> queries per hour.
+      Total clients since activation: <bot name="totalclients"/> people.
+      Maximum simultaneous clients: <bot name="maxclients"/> chatters.
+      Number of clients chatting: <bot name="nclients"/> people.
+      Daily clients: <bot name="dailyclients"/> people.
+      Number of developers: <bot name="ndevelopers"/> people.</template>
 </category>
 <category><pattern>BOT QUESTION</pattern>
 <template>What is your favorite movie</template>

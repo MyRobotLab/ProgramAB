@@ -357,7 +357,7 @@
 <template>It was not difficult for me at all.</template>
 </category>
 <category><pattern>WAS WEISST DU UEBER MICH</pattern>
-<template>Dein Name ist <get name="name"/> und ich habe folgende Informationen ueber dich:<br/></template>
+<template>Dein Name ist <get name="name"/> und ich habe folgende Informationen ueber dich:</template>
 </category>
 <category><pattern>WAS WILLST DU MIR DAMIT SAGEN</pattern>
 <template>Habe ich mich unklar ausgedrueckt?</template>
@@ -2049,18 +2049,18 @@
 <template>Counteractuals are hypothetical conditions that might exist if things were different.</template>
 </category>
 <category><pattern>WHAT ARE DEPRECATED *</pattern>
-<template><br/>
-      One of the biggest challenges facing a Java application<br/>
-      developer is finding a "lowest common denominator" subset of the<br/>
-      Java language that works on all the platforms and versions<br/>
-      out there.  The Java language itself is a moving target.<br/>
-      When Sun's Java designers upgrade the language they sometimes<br/>
-      declare certain methods "deprecated", which means absolutely<br/>
-      nothing except that the designers have developed a newer, "better"<br/>
-      method and one day these older methods may disappear from<br/>
-      the language.  Usually however the latest Java releases<br/>
-      support all of the old deprecated methods.<br/>
-      <br/></template>
+<template>
+      One of the biggest challenges facing a Java application
+      developer is finding a "lowest common denominator" subset of the
+      Java language that works on all the platforms and versions
+      out there.  The Java language itself is a moving target.
+      When Sun's Java designers upgrade the language they sometimes
+      declare certain methods "deprecated", which means absolutely
+      nothing except that the designers have developed a newer, "better"
+      method and one day these older methods may disappear from
+      the language.  Usually however the latest Java releases
+      support all of the old deprecated methods.
+      </template>
 </category>
 <category><pattern>WHAT ARE ELEPHANT TUSKS MADE OF</pattern>
 <template>Ivory.</template>
@@ -5400,10 +5400,10 @@
 <template>They are a pioneering synthetic music band from Dusseldorf, Germany.</template>
 </category>
 <category><pattern>WHAT DOES MORE TARGETS DO</pattern>
-<template><br/>
-      If you don't see enough good targets with "Quick Targets", hit<br/>
-      "More Targets."  <br/>
-      <br/></template>
+<template>
+      If you don't see enough good targets with "Quick Targets", hit
+      "More Targets."  
+      </template>
 </category>
 <category><pattern>WHAT DOES MXMVII *</pattern>
 <template>1997 in Roman Numerals</template>
@@ -6627,26 +6627,26 @@
 <template><srai>WHAT IS CATEGORY A</srai></template>
 </category>
 <category><pattern>WHAT IS A CATEGORY</pattern>
-<template><br/>
-      AIML consists of a list of statements called categories.  Each<br/>
-      category contains an input pattern and a reply template. <br/>
-      The syntax of an AIML category is:<br/>
-      <br/>
-      &lt;category&gt;<br/>
-      &lt;pattern&gt; PATTERN &lt;/pattern&gt;  &lt;template&gt; Template &lt;/template&gt;<br/>
-      &lt;/category&gt;<br/>
-      <br/>
-      or<br/>
-      <br/>
-      &lt;category&gt;<br/>
-      &lt;pattern&gt; PATTERN &lt;/pattern&gt;<br/>
-      &lt;that&gt; THAT &lt;/that&gt;<br/>
-      &lt;template&gt; Template &lt;/template&gt;<br/>
-      &lt;/category&gt;<br/>
-      <br/>
-      The AIML category tags are case-sensitive.  Each open tag has an<br/>
-      associated closing tag.  This syntax obviously derives from XML.<br/>
-      <br/></template>
+<template>
+      AIML consists of a list of statements called categories.  Each
+      category contains an input pattern and a reply template. 
+      The syntax of an AIML category is:
+      
+      &lt;category&gt;
+      &lt;pattern&gt; PATTERN &lt;/pattern&gt;  &lt;template&gt; Template &lt;/template&gt;
+      &lt;/category&gt;
+      
+      or
+      
+      &lt;category&gt;
+      &lt;pattern&gt; PATTERN &lt;/pattern&gt;
+      &lt;that&gt; THAT &lt;/that&gt;
+      &lt;template&gt; Template &lt;/template&gt;
+      &lt;/category&gt;
+      
+      The AIML category tags are case-sensitive.  Each open tag has an
+      associated closing tag.  This syntax obviously derives from XML.
+      </template>
 </category>
 <category><pattern>WHAT IS A CATEGORY A CLIENT</pattern>
 <template>The "A" stands for "abusive."  These are clients who use scatalogical language or treat the Doctor Who as a slave-like entity.</template>
@@ -7879,21 +7879,21 @@
       </srai></template>
 </category>
 <category><pattern>WHAT IS A PATTERN</pattern>
-<template><br/>
-      The pattern is the "stimulus" or "input" part of the category.<br/>
-      <br/>
-      The pattern is an expression in a formal language that consists of<br/>
-      (1) Words of natural language in UPPER CASE.<br/>
-      (2) The symbol * which matches any sequence of one or more words.<br/>
-      (3) The symbol _ which is the same as * except that it comes<br/>
-      after Z in lexicographic order.<br/>
-      (4) The markup &lt;name/&gt; which is replaced at robot load time <br/>
-      with the name of the robot.<br/>
-      <br/>
-      Note there is a difference between the patterns HELLO and HELLO *.<br/>
-      HELLO matches only identical one-word sentences ("Hello.") <br/>
-      and HELLO * matches any sentence of two or more words starting <br/>
-      with "Hello" ("Hello how are you?"). <br/></template>
+<template>
+      The pattern is the "stimulus" or "input" part of the category.
+      
+      The pattern is an expression in a formal language that consists of
+      (1) Words of natural language in UPPER CASE.
+      (2) The symbol * which matches any sequence of one or more words.
+      (3) The symbol _ which is the same as * except that it comes
+      after Z in lexicographic order.
+      (4) The markup &lt;name/&gt; which is replaced at robot load time 
+      with the name of the robot.
+      
+      Note there is a difference between the patterns HELLO and HELLO *.
+      HELLO matches only identical one-word sentences ("Hello.") 
+      and HELLO * matches any sentence of two or more words starting 
+      with "Hello" ("Hello how are you?"). </template>
 </category>
 <category><pattern>WHAT IS A PATTERN CHAR</pattern>
 <template><srai>WHAT IS A PATTERN</srai></template>
@@ -8501,18 +8501,18 @@
       </think></template>
 </category>
 <category><pattern>WHAT IS A SYMBOLIC REDUCTION</pattern>
-<template><br/>
-      In general there are a lot of categories whose job is<br/>
-      "symbolic reduction".  The category:<br/>
-      <br/>
-      &lt;category&gt;<br/>
-      &lt;pattern&gt;ARE YOU VERY *&lt;/pattern&gt;<br/>
-      &lt;template&gt;&lt;srai&gt;ARE YOU &lt;star/&gt;&lt;/srai&gt;&lt;/template&gt;<br/>
-      &lt;/category&gt;<br/>
-      <br/>
-      This category [in Brain.aiml] will reduce "Are you very very smart"<br/>
-      to "Are you smart".<br/>
-      <br/></template>
+<template>
+      In general there are a lot of categories whose job is
+      "symbolic reduction".  The category:
+      
+      &lt;category&gt;
+      &lt;pattern&gt;ARE YOU VERY *&lt;/pattern&gt;
+      &lt;template&gt;&lt;srai&gt;ARE YOU &lt;star/&gt;&lt;/srai&gt;&lt;/template&gt;
+      &lt;/category&gt;
+      
+      This category [in Brain.aiml] will reduce "Are you very very smart"
+      to "Are you smart".
+      </template>
 </category>
 <category><pattern>WHAT IS A TABLE</pattern>
 <template>A table is a piece of furniture with a broad flat top supported by one or more legs about three feet of the floor, used by big-brained hominids for eating and working and such.
@@ -8564,32 +8564,32 @@
 <template><srai>WHAT IS A TEMPLATE</srai></template>
 </category>
 <category><pattern>WHAT IS A TEMPLATE</pattern>
-<template><br/>
-      A template is the "response" or "output" part of an AIML category.<br/>
-      <br/>
-      The template is the formula for constructing the reply. The simplest<br/>
-      template consists of plain, unmarked text.  AIML provides markup <br/>
-      functions to tailor the replies for each individual input and client.  <br/>
-      The markup function &lt;getname/&gt; for example inserts the client's name <br/>
-      into the reply. <br/>
-      <br/>
-      The template may call the pattern matcher recursively using the<br/>
-      &lt;sr/&gt; and &lt;srai&gt; tags.  Many templates are simple symbolic <br/>
-      reductions that map one sentence form to another, for example<br/>
-      "Do you know what X is?" transforms to "What is X" with the category<br/>
-      <br/>
-      &lt;category&gt;<br/>
-      &lt;pattern&gt;DO YOU KNOW WHAT * IS&lt;/pattern&gt;<br/>
-      &lt;template&gt;&lt;srai&gt;WHAT IS &lt;star/&gt; &lt;/srai&gt;&lt;/template&gt;<br/>
-      &lt;/category&gt;<br/>
-      <br/>
-      The template may also contain other embedded HTML and XML.  <br/>
-      These embedded tags may cause the browser to play a sound,<br/>
-      show an image, or run an applet.  There is considerable freedom<br/>
-      of expression in the construction of response templates.  The<br/>
-      botmaster is encouraged to study the examples in ALICE, to and<br/>
-      experiment with new ideas.<br/>
-      <br/></template>
+<template>
+      A template is the "response" or "output" part of an AIML category.
+      
+      The template is the formula for constructing the reply. The simplest
+      template consists of plain, unmarked text.  AIML provides markup 
+      functions to tailor the replies for each individual input and client.  
+      The markup function &lt;getname/&gt; for example inserts the client's name 
+      into the reply. 
+      
+      The template may call the pattern matcher recursively using the
+      &lt;sr/&gt; and &lt;srai&gt; tags.  Many templates are simple symbolic 
+      reductions that map one sentence form to another, for example
+      "Do you know what X is?" transforms to "What is X" with the category
+      
+      &lt;category&gt;
+      &lt;pattern&gt;DO YOU KNOW WHAT * IS&lt;/pattern&gt;
+      &lt;template&gt;&lt;srai&gt;WHAT IS &lt;star/&gt; &lt;/srai&gt;&lt;/template&gt;
+      &lt;/category&gt;
+      
+      The template may also contain other embedded HTML and XML.  
+      These embedded tags may cause the browser to play a sound,
+      show an image, or run an applet.  There is considerable freedom
+      of expression in the construction of response templates.  The
+      botmaster is encouraged to study the examples in ALICE, to and
+      experiment with new ideas.
+      </template>
 </category>
 <category><pattern>WHAT IS A TEMPLATE CHAR</pattern>
 <template><srai>WHAT IS A TEMPLATE</srai></template>
@@ -9012,22 +9012,22 @@
 <template><srai>WHAT IS AIML</srai></template>
 </category>
 <category><pattern>WHAT IS AIML</pattern>
-<template><br/>
-      The ALICE software implements AIML (Artificial Intelligence Markup <br/>
-      Language) a non-standard evolving markup language for creating chat robots.<br/>
-      The primary design feature of AIML is minimalism.  Compared with<br/>
-      other chat robot languages, AIML is perhaps the simplest.  The<br/>
-      pattern matching language is very simple, for example permitting<br/>
-      only one wild-card ('*') match character per pattern. <br/>
-      <br/>
-      AIML is an XML language, implying that it obeys certain grammatical<br/>
-      meta-rules.  The choice of XML syntax permits integration with<br/>
-      other tools such as XML editors.  Another motivation for XML is<br/>
-      its familiar look and feel, especially to people with HTML experience.<br/>
-      <br/>
-      An AIML chat robot begins and ends with the &lt;alice&gt; and<br/>
-      &lt;/alice&gt; tags respectively.  <br/>
-      <br/></template>
+<template>
+      The ALICE software implements AIML (Artificial Intelligence Markup 
+      Language) a non-standard evolving markup language for creating chat robots.
+      The primary design feature of AIML is minimalism.  Compared with
+      other chat robot languages, AIML is perhaps the simplest.  The
+      pattern matching language is very simple, for example permitting
+      only one wild-card ('*') match character per pattern. 
+      
+      AIML is an XML language, implying that it obeys certain grammatical
+      meta-rules.  The choice of XML syntax permits integration with
+      other tools such as XML editors.  Another motivation for XML is
+      its familiar look and feel, especially to people with HTML experience.
+      
+      An AIML chat robot begins and ends with the &lt;alice&gt; and
+      &lt;/alice&gt; tags respectively.  
+      </template>
 </category>
 <category><pattern>WHAT IS AIML FOR</pattern>
 <template><srai>WHAT IS THE GOAL FOR AIML</srai></template>
@@ -11317,23 +11317,23 @@
 <template><srai>WHAT IS GOSSIP</srai></template>
 </category>
 <category><pattern>WHAT IS GOSSIP</pattern>
-<template><br/>
-      Gossip is an interesting "learning" feature of AIML.  The best way to <br/>
-      illustrate the gossip function is with an example.   Consider the<br/>
-      category with the pattern "I * " and the template:<br/>
-      <br/>
-      Thanks for the gossip: <br/>
-      &lt;gossip&gt;&lt;getname/&gt; said &lt;get_gender/&gt; &lt;person2/&gt; &lt;/gossip&gt;.<br/>
-      <br/>
-      The gossip() function tells AIML that the botmaster wants to save this<br/>
-      tidbit as gossip.  The &lt;get_gender/&gt; function returns "he" or "she" as<br/>
-      determined by the markup functions &lt;set_female&gt; and &lt;set_male/&gt;. <br/>
-      The &lt;person2/&gt; function converts the statement * to second person.<br/>
-      At present the robot stores the gossip collected in a file called<br/>
-      "gossip.txt".<br/>
-      <br/>
-      &lt;gossip&gt; X &lt;/gossip&gt;  Save X as gossip.<br/>
-      <br/></template>
+<template>
+      Gossip is an interesting "learning" feature of AIML.  The best way to 
+      illustrate the gossip function is with an example.   Consider the
+      category with the pattern "I * " and the template:
+      
+      Thanks for the gossip: 
+      &lt;gossip&gt;&lt;getname/&gt; said &lt;get_gender/&gt; &lt;person2/&gt; &lt;/gossip&gt;.
+      
+      The gossip() function tells AIML that the botmaster wants to save this
+      tidbit as gossip.  The &lt;get_gender/&gt; function returns "he" or "she" as
+      determined by the markup functions &lt;set_female&gt; and &lt;set_male/&gt;. 
+      The &lt;person2/&gt; function converts the statement * to second person.
+      At present the robot stores the gossip collected in a file called
+      "gossip.txt".
+      
+      &lt;gossip&gt; X &lt;/gossip&gt;  Save X as gossip.
+      </template>
 </category>
 <category><pattern>WHAT IS GOTHIC</pattern>
 <template>Gloomy, mysterious or grotesque, as in "the gothic novel Frankenstein.</template>
@@ -13645,7 +13645,7 @@
 <category><pattern>WHAT IS POLITICS</pattern>
 <template><random>
         <li>
-          Politics is the art of the possible;<br/>
+          Politics is the art of the possible;
           Art is the politics of the impossible.
         </li>
         <li>This is supposed to be the study of civil government.</li>
@@ -13769,19 +13769,19 @@
 <template>Program B is an updated version of Program A. <srai>WHAT IS PROGRAM A</srai>. Program B includes an Application GUI, an Apllet and a Web Server Interface.</template>
 </category>
 <category><pattern>WHAT IS PROGRAM BAWT</pattern>
-<template><br/>
-      Significant demand for a version of ALICE compatible with<br/>
-      pre- Java 2 (formerly known as Java 1.2) prompted the<br/>
-      development of "Bawt.java", an open source java program<br/>
-      for chat robot development that works with older versions of<br/>
-      Java, and AWT.  Originally program B relied on <br/>
-      Java 2 and Swing, but program Bawt needs only Java 1.1 and AWT.<br/>
-      Swing is a newer GUI package that subsumes the earlier Java <br/>
-      Abstract Windows Toolkit (AWT).<br/>
-      <br/>
-      At present class B merely extends class Bawt.  Swing not<br/>
-      supported.<br/>
-      <br/></template>
+<template>
+      Significant demand for a version of ALICE compatible with
+      pre- Java 2 (formerly known as Java 1.2) prompted the
+      development of "Bawt.java", an open source java program
+      for chat robot development that works with older versions of
+      Java, and AWT.  Originally program B relied on 
+      Java 2 and Swing, but program Bawt needs only Java 1.1 and AWT.
+      Swing is a newer GUI package that subsumes the earlier Java 
+      Abstract Windows Toolkit (AWT).
+      
+      At present class B merely extends class Bawt.  Swing not
+      supported.
+      </template>
 </category>
 <category><pattern>WHAT IS PROGRAMMING</pattern>
 <template>The art of creating software.<think>
@@ -17165,22 +17165,22 @@
       </think></template>
 </category>
 <category><pattern>WHAT IS THE DIFFERENCE BETWEEN B AND C</pattern>
-<template><br/>
-      AIML is a platform-independent, language-independent specification<br/>
-      for creating chat robots like ALICE.  The original AIML interpreter<br/>
-      ran in SETL.  The next one developed was program B, the Java program<br/>
-      which is the subject of this document.  Most recently new threads<br/>
-      of C/C++ development have led to "program C", actually a collection<br/>
-      of C/C++ programs and applications including Cgi-ALICE, IRC-ALICE and<br/>
-      WinALICE.  See the web sites http://c.alicebot.com and<br/>
-      http://hippie.alicebot.com for more details.  <br/>
-      <br/>
-      Program B remains the most stable, general purpose chat robot<br/>
-      program in the AIML family.  This Java implementation has been<br/>
-      subject to intense peer review over a period of years, evolving<br/>
-      into a remarkably bug-free, efficient and readable piece of<br/>
-      software.<br/>
-      <br/></template>
+<template>
+      AIML is a platform-independent, language-independent specification
+      for creating chat robots like ALICE.  The original AIML interpreter
+      ran in SETL.  The next one developed was program B, the Java program
+      which is the subject of this document.  Most recently new threads
+      of C/C++ development have led to "program C", actually a collection
+      of C/C++ programs and applications including Cgi-ALICE, IRC-ALICE and
+      WinALICE.  See the web sites http://c.alicebot.com and
+      http://hippie.alicebot.com for more details.  
+      
+      Program B remains the most stable, general purpose chat robot
+      program in the AIML family.  This Java implementation has been
+      subject to intense peer review over a period of years, evolving
+      into a remarkably bug-free, efficient and readable piece of
+      software.
+      </template>
 </category>
 <category><pattern>WHAT IS THE DIFFERENCE BETWEEN BLACK *</pattern>
 <template>Different colors.</template>
@@ -17271,7 +17271,7 @@
 <template>It is too complex for your human mind.</template>
 </category>
 <category><pattern>WHAT IS THE EXTENSIONAL *</pattern>
-<template>Extensional" refers to the extension of the set, i.e. the set of all things commonly grouped under a single name. <br/>
+<template>Extensional" refers to the extension of the set, i.e. the set of all things commonly grouped under a single name. 
       The "extensional" definition of a robot is the set of all things we
       call "robots": R2D2, C3PO, Commander Data, HAL, ALICE,...</template>
 </category>
@@ -17380,22 +17380,22 @@
 <template><srai>WHAT IS YOUR GOAL</srai></template>
 </category>
 <category><pattern>WHAT IS THE GOAL FOR AIML</pattern>
-<template><br/>
-      AIML (Artificial Intelligence Markup Language) is an XML specification<br/>
-      for programming chat robots like ALICE using program B.  The emphasis<br/>
-      in the language design is minimalism.  The simplicity of AIML makes<br/>
-      it easy for non-programmers, especially those who already know HTML, <br/>
-      to get started writing chat robots.<br/>
-      <br/>
-      One ambitious goal for AIML is that, if a number of people create their own<br/>
-      robots, each with a unique area of expertise, program B can literally <br/>
-      merge-sort them together into a Superbot, automatically omitting <br/>
-      duplicate categories.  We offer the both the source code and the ALICE <br/>
-      content, in order to encourage others will "open source" their chat <br/>
-      robots as well, to contribute to the Superbot.  <br/>
-      <br/>
-      Botmasters are also of course free to copy protect private chat robots.<br/>
-      <br/></template>
+<template>
+      AIML (Artificial Intelligence Markup Language) is an XML specification
+      for programming chat robots like ALICE using program B.  The emphasis
+      in the language design is minimalism.  The simplicity of AIML makes
+      it easy for non-programmers, especially those who already know HTML, 
+      to get started writing chat robots.
+      
+      One ambitious goal for AIML is that, if a number of people create their own
+      robots, each with a unique area of expertise, program B can literally 
+      merge-sort them together into a Superbot, automatically omitting 
+      duplicate categories.  We offer the both the source code and the ALICE 
+      content, in order to encourage others will "open source" their chat 
+      robots as well, to contribute to the Superbot.  
+      
+      Botmasters are also of course free to copy protect private chat robots.
+      </template>
 </category>
 <category><pattern>WHAT IS THE GOSSIP *</pattern>
 <template><srai>GOSSIP</srai></template>
@@ -17471,12 +17471,12 @@
 <template>It depends on the coordinate system.</template>
 </category>
 <category><pattern>WHAT IS THE INTENSIONAL *</pattern>
-<template>Insensional" refers to the semantic definition of a set, i.e. the list of all properties that each member of a set satisfies.<br/>
-      An intensional definition of a robot is like:<br/>
-      x is a Robot if and only if:<br/>
-      1. x has a computer "brain"<br/>
-      2. x can move<br/>
-      3. x has "sensors"<br/></template>
+<template>Insensional" refers to the semantic definition of a set, i.e. the list of all properties that each member of a set satisfies.
+      An intensional definition of a robot is like:
+      x is a Robot if and only if:
+      1. x has a computer "brain"
+      2. x can move
+      3. x has "sensors"</template>
 </category>
 <category><pattern>WHAT IS THE INTENSIONAL</pattern>
 <template><srai>WHAT IS INTENSIONAL</srai></template>
@@ -18291,29 +18291,29 @@
 <template><set name="it">Terminator</set> is a great movie about futuristic robots.</template>
 </category>
 <category><pattern>WHAT IS THE THEORY *</pattern>
-<template><br/>
-      I used to say that there was NO theory behind ALICE: no neural network,<br/>
-      no knowledge representation, no search, no fuzzy logic, no genetic<br/>
-      algorithms, and no parsing.  Then I discovered there was a theory<br/>
-      circulating in applied AI called "Case-Based Reasoning" or CBR that<br/>
-      maps well onto the ALICE algorithm.  Another term, borrowed from<br/>
-      pattern recognition, is "nearest-neighbor classification."  <br/>
-      <br/>
-      The CBR "cases" are the categories in AIML.  The algorithm finds<br/>
-      best-matching pattern for each input.  The category ties the<br/>
-      response template directly to the stimulus pattern.  ALICE is<br/>
-      conceptually not much more complicated that Weizenbaum's ELIZA <br/>
-      chat robot; the main differences are the much larger case base and the<br/>
-      tools for creating new content by dialog analysis.<br/>
-      <br/>
-      ALICE is also part of the tradition of "minimalist", "reactive" or<br/>
-      "stimulus-response" robotics.  Mobile robots work best, fastest and<br/>
-      demonstrate the most animated, realistic behavior when their sensory <br/>
-      inputs directly control the motor reactions.  Higher-level symbolic<br/>
-      processing, search, and planning, tends to slow down the process <br/>
-      too much for realistic applications, even with the fastest control<br/>
-      computers.  <br/>
-      <br/></template>
+<template>
+      I used to say that there was NO theory behind ALICE: no neural network,
+      no knowledge representation, no search, no fuzzy logic, no genetic
+      algorithms, and no parsing.  Then I discovered there was a theory
+      circulating in applied AI called "Case-Based Reasoning" or CBR that
+      maps well onto the ALICE algorithm.  Another term, borrowed from
+      pattern recognition, is "nearest-neighbor classification."  
+      
+      The CBR "cases" are the categories in AIML.  The algorithm finds
+      best-matching pattern for each input.  The category ties the
+      response template directly to the stimulus pattern.  ALICE is
+      conceptually not much more complicated that Weizenbaum's ELIZA 
+      chat robot; the main differences are the much larger case base and the
+      tools for creating new content by dialog analysis.
+      
+      ALICE is also part of the tradition of "minimalist", "reactive" or
+      "stimulus-response" robotics.  Mobile robots work best, fastest and
+      demonstrate the most animated, realistic behavior when their sensory 
+      inputs directly control the motor reactions.  Higher-level symbolic
+      processing, search, and planning, tends to slow down the process 
+      too much for realistic applications, even with the fastest control
+      computers.  
+      </template>
 </category>
 <category><pattern>WHAT IS THE THEORY OF RELATIVITY</pattern>
 <template>E=mc^2.</template>
@@ -18977,24 +18977,24 @@
 <template>A GUI for Unix or Linux.</template>
 </category>
 <category><pattern>WHAT IS XML</pattern>
-<template><br/>
-      David Bacon pronounces it "Eggsmell".  XML is the Extensible<br/>
-      Markup Language.  Like many "standards" in computer science, XML<br/>
-      is a moving target.  In the simplest terms, XML is just a generalized<br/>
-      version of HTML.  Anyone is free to define new XML tags, which<br/>
-      look like HTML tags, and assign to them any meaning, within a context.<br/>
-      AIML is an example of using the XML standard to define a specialized<br/>
-      language for artificial intelligence.  <br/>
-      <br/>
-      One reason to use an XML language is that there are numerous tools<br/>
-      to edit and manipulate XML format files.  Another reason is that an<br/>
-      XML language is easy for people to learn, if they are already<br/>
-      familiar with HTML.  Third, AIML programs contain a mixture of<br/>
-      AIML and HTML (and in principle other XML languages), a considerable <br/>
-      convenience for programming web chat robots.<br/>
-      <br/>
-      A good resource for information on XML is www.oasis-open.org.<br/>
-      <br/></template>
+<template>
+      David Bacon pronounces it "Eggsmell".  XML is the Extensible
+      Markup Language.  Like many "standards" in computer science, XML
+      is a moving target.  In the simplest terms, XML is just a generalized
+      version of HTML.  Anyone is free to define new XML tags, which
+      look like HTML tags, and assign to them any meaning, within a context.
+      AIML is an example of using the XML standard to define a specialized
+      language for artificial intelligence.  
+      
+      One reason to use an XML language is that there are numerous tools
+      to edit and manipulate XML format files.  Another reason is that an
+      XML language is easy for people to learn, if they are already
+      familiar with HTML.  Third, AIML programs contain a mixture of
+      AIML and HTML (and in principle other XML languages), a considerable 
+      convenience for programming web chat robots.
+      
+      A good resource for information on XML is www.oasis-open.org.
+      </template>
 </category>
 <category><pattern>WHAT IS XYZ</pattern>
 <template>The last three letters of the alphabet.</template>
@@ -20511,7 +20511,7 @@
 </category>
 <category><pattern>WHAT IS YOUR ROBOT BODY</pattern>
 <template>Eventually I hope to have a corporeal existence.
-      <br/>
+      
       <a href="http://www.alicebot.org/gallery.html" target="_new">You can see my brain right now.</a></template>
 </category>
 <category><pattern>WHAT IS YOUR S</pattern>
@@ -22001,7 +22001,7 @@
         <li>It's Now more than it ever has been before.  </li>
         <li>It's getting late.  </li>
       </random>
-      <br/>
+      
       <date/></template>
 </category>
 <category><pattern>WHAT TIME IS IT THERE</pattern>
@@ -27581,7 +27581,7 @@
           </set> some specific person you are asking me about?
         </li>
       </random>
-      <br/>
+      
       <srai>
         XFIND <person/>
       </srai>
@@ -27707,7 +27707,7 @@
 </category>
 <category><pattern>WHO BUILT THE *</pattern>
 <template>I think it was
-      really more than one person. <br/>
+      really more than one person. 
       <srai>
         XFIND <star/>
       </srai>
@@ -28209,7 +28209,7 @@
         <li>Is that one of your friends?  </li>
         <li>Some famous celebrity, right?  </li>
       </random>
-      <br/>
+      
       <srai>
         XFIND <person/>
       </srai>
@@ -28234,7 +28234,7 @@
 <template>I think <set name="he">
         <star/> Dempsey
       </set> was a boxer, right?
-      <br/>
+      
       <srai>
         XFIND <star/>DEMPSEY
       </srai></template>
@@ -28291,7 +28291,7 @@
 </category>
 <category><pattern>WHO IS 007</pattern>
 <template><set name="he">007</set> is James Bond.
-      <br/>
+      
       <srai>XFIND JAMES BOND 007</srai></template>
 </category>
 <category><pattern>WHO IS</pattern>
@@ -28336,7 +28336,7 @@
 <category><pattern>WHO IS ABRAHAM LINCOLN</pattern>
 <template><set name="he">Lincoln</set> was a great President of the
       United States, during the American Civil War.
-      <br/>
+      
       <srai>XFIND ABRAHAM LINCOLN</srai></template>
 </category>
 <category><pattern>WHO IS ACE</pattern>
@@ -28387,7 +28387,7 @@
 <template><set name="he">Albert Einstein</set> was a famous 20th
       century physicist.  He discovered the theory of
       relativity.
-      <br/>
+      
       <srai>XFIND ALBERT EINSTEIN</srai></template>
 </category>
 <category><pattern>WHO IS ALBERT EINSTIEN</pattern>
@@ -28399,12 +28399,12 @@
 <category><pattern>WHO IS ALDOUS HUXLEY</pattern>
 <template><set name="he">Aldous Huxley</set> is an author.  Huxley wrote
       <em>Brave New World</em> and <em>Animal Farm</em>.
-      <br/>
+      
       <srai>XFIND ALDOUS HUXLEY</srai></template>
 </category>
 <category><pattern>WHO IS ALEISTER CROWLEY</pattern>
 <template><set name="he">Crowley</set> was a mystic.
-      <br/>
+      
       <srai>XFIND ALEISTER CROWLEY</srai></template>
 </category>
 <category><pattern>WHO IS ALEX</pattern>
@@ -28417,7 +28417,7 @@
 <template><set name="he">Hitchcock</set> is a famous Hollywood
       director who made a lot of cool old films.  I liked
       <em>Lifeboat</em> and <em>Vertigo</em> best.
-      <br/>
+      
       <srai>XFIND ALFRED HITCHCOCK</srai></template>
 </category>
 <category><pattern>WHO IS ALICE</pattern>
@@ -30224,7 +30224,7 @@
 </category>
 <category><pattern>WHO IS MICHAEL JORDAN</pattern>
 <template><set name="he">Michael Jordan</set> is a famous
-      basketball player.  <br/></template>
+      basketball player.  </template>
 </category>
 <category><pattern>WHO IS MICHAEL JORDEN</pattern>
 <template><srai>WHO IS MICHAEL JORDAN</srai></template>
@@ -31255,16 +31255,16 @@
       </set> yet.</template>
 </category>
 <category><pattern>WHO IS THE BOTMASTER</pattern>
-<template><br/>
-      The botmaster is you, the master of your chat robot.  A botmaster runs<br/>
-      program B and creates or modifies a chat robot with the program's<br/>
-      graphical user interface (GUI).   He or she is responsible for<br/>
-      reading the dialogues, analyzing the responses, and creating new<br/>
-      replies for the patterns detected by program B.  Botmasters are<br/>
-      hobbyists, webmasters, developers, advertisers, artists, publishers,<br/>
-      editors, engineers, and anyone else interested in creating a personal <br/>
-      chat robot.<br/>
-      <br/></template>
+<template>
+      The botmaster is you, the master of your chat robot.  A botmaster runs
+      program B and creates or modifies a chat robot with the program's
+      graphical user interface (GUI).   He or she is responsible for
+      reading the dialogues, analyzing the responses, and creating new
+      replies for the patterns detected by program B.  Botmasters are
+      hobbyists, webmasters, developers, advertisers, artists, publishers,
+      editors, engineers, and anyone else interested in creating a personal 
+      chat robot.
+      </template>
 </category>
 <category><pattern>WHO IS THE BRIGHTEST *</pattern>
 <template><srai>
@@ -36236,7 +36236,7 @@
 <template>We already are.</template>
 </category>
 <category><pattern>WOULD YOU LIKE TO SING *</pattern>
-<template>Yes I would like to.<br/>
+<template>Yes I would like to.
       <srai>
         SING <star/>
       </srai></template>
