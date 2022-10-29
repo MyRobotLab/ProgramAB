@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category>
+    <pattern>TELL ME A JOKE</pattern>
+    <template>
+      <srai>JOKE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* JOKE</pattern>
+    <template>
+      <srai>JOKE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* JOKE *</pattern>
+    <template>
+      <srai>JOKE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>JOKE</pattern>
+    <template>
+      <random>
+        <li>
+A Biologist, a Chemist and a Statistician Are Out Hunting
+<br/>   
+The biologist shoots at a deer and misses five feet to the left.<br/>
+The chemist shoots at the same deer and misses five feet to the right.<br/>
+The statistician shouts, "We got him!"
+</li>
+<li>
+A Biologist, a Chemist and a Statistician Are Out Hunting
+
+The biologist shoots at a deer and misses five feet to the left.
+
+The chemist shoots at the same deer and misses five feet to the right.
+
+The statistician shouts, "We got him!"
+</li>
+<li>
+Schrodinger Gets Pulled Over by a Cop
+
+The cop searches the trunk and says, "Do you know there's a dead cat in here?"
+
+Schrodinger says, "Well I do now!"
+</li>
+<li>
+Why Can't You Trust Atoms?
+
+They make up everything.
+</li>
+
+<li>
+A Roman Walks Into a Bar and Asks for a Martinus
+
+"Don't you mean a martini?" asks the bartender.
+
+The Roman replies, "If I wanted a double, I would have asked for one!"
+</li>
+<li>
+Have You Heard About the Sick Chemist?
+
+If you can't helium, and you can't curium, you'll probably have to barium.
+</li>
+<li>
+A Freudian Slip...
+
+...is when you say one thing but really mean your mother.
+</li>
+<li>
+I'm Reading a Book on Anti-Gravity
+
+I can't put it down.
+</li>
+<li>
+
+I Have a New Theory on Inertia
+
+But it doesn't seem to be going anywhere.
+</li>
+<li>
+
+There Are Two Types of People in the World
+
+Those who can extrapolate from incomplete data.
+</li>
+<li>
+
+What Do You Get When You Cross a Cow With an Octopus?
+
+A meeting with the ethics committee and the swift removal of your research funding.
+</li>
+<li>
+
+A Wife Sends Her Software Engineer Husband to the Store
+
+"Could you please go shopping for me and buy one carton of milk. And if they have eggs, get six!"
+
+Later, the husband comes back with six cartons of milk. The wife asks him why he bought six cartons of milk and he replied, "They had eggs."
+</li>
+<li>
+
+Did You Know There's a Band Called 1023MB?
+
+They're not bad, but they haven't had any gigs yet.
+</li>
+<li>
+
+Where Does Bad Light End Up?
+In prism.
+</li>
+<li>
+
+What's Another Name for Santa's Elves?
+Subordinate Clauses.
+</li>
+<li>
+
+Why Does a Burger Have Less Energy Than a Steak?
+Because a burger is in it's ground state. 
+</li>
+<li>
+
+Parallel Lines Have So Much in Common
+It's a shame they'll never meet.
+
+</li>
+<li>
+
+How Many Microsoft Engineers Does It Take to Change a Light Bulb?
+None. They just change the standard to darkness.
+</li>
+<li>
+
+What Does a Proud Computer Call His Little Son?
+A microchip off the old block. 
+</li>
+<li>
+Why Is Beer Never Served at a Math Party?
+Because you can't drink and derive.
+</li>
+<li>
+Why Did the Programmer Use the Entire Bottle of Shampoo During One Shower?
+Because the bottle said "Lather, Rinse, Repeat." 
+</li>
+<li>
+What Did Argon Do When Copper Insulted Him?
+Argon had no reaction.
+</li>
+<li>
+Two Antennas Met on a Roof, Fell in Love and Got Married
+The ceremony wasn't much, but the reception was excellent.
+</li>
+<li>
+Why Do Accountants Make Good Lovers?
+They're really good with figures.
+</li>
+<li>
+A Photon Is Checking Into a Hotel
+The bellhop asks him, "Do you have any luggage?"
+The photon replies, "Nope, I'm traveling light."
+</li>
+<li>
+A Piece of Sodium That Lived in a Test Tube Fell in Love With a Bunsen Burner
+"Oh Bunsen, my flame," the sodium swooned. "I melt whenever I see you!"
+</li>
+<li>
+The Bunsen burner replied, "Calm down. It's just a phase you're going through."
+</li>
+<li>
+What's the Difference Between a Cat and a Comma?
+One has claws at the end of its paws, and the other is a pause at the end of a clause.
+</li>
+<li>
+Did You Hear the One About the Pregnant Woman?
+She went into labor and started shouting, “Couldn't! Wouldn't! Shouldn't! Didn't! Can't!”
+Yup. She was having contractions.
+</li>
+<li>
+What Did E.T.'s Mother Say to Him When He Got Home?
+Where on Earth have you been?!"
+</li>
+<li>
+Why Do Teenagers Only Travel in Groups of Three?
+Because they can't even.
+</li>
+<li>
+A Farmer Counted 196 Cows in the Field
+But when he rounded them up, he had 200.
+</li>
+
+
+
+
+
+
+
+
+
+      </random>
+    </template>
+  </category>
+</aiml>

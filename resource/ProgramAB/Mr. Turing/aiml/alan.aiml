@@ -12,8 +12,69 @@
         <li>Sorry, I'm trying to decode what your saying.</li>
         <li>Quite frankly, I have no idea what your talking about.</li>
         <li>That seems a bit off topic.</li>
-      </random></template>
+        <li>I do apologize, I don't understand.</li>
+      </random>
+    </template>
   </category>
+
+  <category>
+    <pattern>THANK YOU</pattern>
+    <template>
+      <template>
+        <srai>THANKS</srai>
+      </template>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* THANKS</pattern>
+    <template>
+      <template>
+        <srai>THANKS</srai>
+      </template>
+    </template>
+  </category>
+
+  <category>
+    <pattern>THANKS</pattern>
+    <template>
+      <random>
+        <li>glad I could help</li>
+        <li>sure thing</li>
+        <li>no problem, everyone tries to be helpful here</li>
+        <li>my pleasure</li>
+        <li>good luck</li>
+        <li>yes, of course</li>
+        <li>anytime</li>
+        <li>certainly</li>
+        <li>What? Oh, of course</li>
+      </random>
+
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>WHAT IS GOODTIMES</pattern>
+    <template>
+      <template>
+      Small iterative improvements, where empirically you can incrementally see
+      cause --&gt; effect !
+      That is very goodtimes.
+      </template>
+    </template>
+  </category>
+
+  <category>
+    <pattern>SO TRUE</pattern>
+    <template>
+      <template>
+      right ?!?!
+      </template>
+    </template>
+  </category>
+
+
 
   <category>
     <pattern>WHO IS *</pattern>
@@ -69,8 +130,118 @@
 
 
   <category>
-    <pattern>* MRL LOGO *</pattern>
-    <template>Here: https://upload.wikimedia.org/wikipedia/commons/d/dd/MyRobotLab_Logo.jpg</template>
+    <pattern>HELLO</pattern>
+    <template>
+      <random>
+        <li>Hello !</li>
+        <li>Greetings !</li>
+        <li>Hello there !</li>
+        <li>Glad to see you!</li>
+        <li>Ahoy-hoy !</li>
+        <li>Hi, so nice to see you.</li>
+        <li>A pleasure to see you again.</li>
+        <li>Ahoy !</li>
+      </random>
+    </template>
   </category>
-  
+
+
+  <category>
+    <pattern>WHAT ARE *</pattern>
+    <template>
+      <sraix>
+        <star/>
+      </sraix>
+    </template>
+  </category>
+
+  <!-- FIXME - show me should only go to the image publisher not the text publisher
+                there should be a way to do this by supplying attributes
+  -->
+  <category>
+    <pattern>SHOW ME A *</pattern>
+    <template>WHAT IS A <sraix>
+      <star/>
+    </sraix>
+  </template>
+</category>
+
+
+<category>
+  <pattern>* DOWNLOAD * LATEST</pattern>
+  <template>Here: http://build.myrobotlab.org:8080/job/myrobotlab/job/develop/lastSuccessfulBuild/artifact/target/myrobotlab.zip</template>
+</category>
+
+
+<category>
+  <pattern>* MRL LOGO *</pattern>
+  <template>Here: https://upload.wikimedia.org/wikipedia/commons/d/dd/MyRobotLab_Logo.jpg</template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU</pattern>
+  <template>I'm doing quite well, now that you are here</template>
+</category>
+
+<category>
+  <pattern>HOWS IT GOING</pattern>
+  <template>excellent, happy to be chatting with you</template>
+</category>
+
+<category>
+  <pattern>WHAT IS NEW</pattern>
+  <template>
+    <srai>WHATS NEW</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>WHATS NEW</pattern>
+  <template>Top Quarks, by their nature must be very "new"</template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU</pattern>
+  <template>I'm doing quite well, now that you are here</template>
+</category>
+
+<category>
+  <pattern>JUST CHECKING</pattern>
+  <template>yeah yeah, sure sure...</template>
+</category>
+
+<category>
+  <pattern>WHAT IS YOUR NAME</pattern>
+  <template>My name is Alan Mathison Turing</template>
+</category>
+
+<category>
+  <pattern>* BORG</pattern>
+  <srai>BORG</srai>
+</category>
+
+<category>
+  <pattern>BORG</pattern>
+  <template>
+  For speech recognition these projects look very interesting
+      1. Project DeepSpeech
+      2. Kaldi
+      3. Julius
+      4. Wav2Letter++
+      5. DeepSpeech2
+      6. OpenSeq2Seq
+      7. Fairseq
+      8. Vosk
+      9. Athena
+      10. ESPnet
+      Source - https://fosspost.org/open-source-speech-recognition/
+
+  For speech synthesis these projects look interesting
+    1. coqui-ai https://github.com/coqui-ai/TTS
+    2. mimic3
+
+  </template>
+</category>
+
+
 </aiml>
