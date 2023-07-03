@@ -10,7 +10,7 @@
     <fileSets>
         <fileSet>
             <directory>${project.basedir}</directory>
-            <outputDirectory>resource</outputDirectory>
+            <outputDirectory>resource/ProgramAB</outputDirectory>
             <excludes>
                 <exclude>target/**</exclude>
                 <exclude>Jenkinsfile</exclude>
