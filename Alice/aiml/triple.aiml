@@ -361,7 +361,7 @@ Who is younger Aristotle or Socrates? <srai>Who is younger Aristotle or Socrates
 <li value="YES"><get var="thing1"/> is <get var="er"/>.</li>
 <li value="NO"><get var="thing2"/> is <get var="er"/>.</li>
 <li value="same">They are the same.</li>
-<li><sraix service="pannous">WHICH IS <star/> <star index="2"/> OR <star index="3"/></sraix></li>
+<li><sraix>WHICH IS <star/> <star index="2"/> OR <star index="3"/></sraix></li>
 </condition></template>
 </category>
 <category><pattern>IS * <set>erdown</set> THAN *</pattern>
@@ -447,7 +447,7 @@ Who is younger Aristotle or Socrates? <srai>Who is younger Aristotle or Socrates
 <li value="YES"><get var="thing2"/> is <get var="er"/>.</li>
 <li value="NO"><get var="thing1"/> is <get var="er"/>.</li>
 <li value="same">They are the same.</li>
-<li><sraix service="pannous">WHICH IS <star/> <star index="2"/> OR <star index="3"/></sraix></li>
+<li><sraix>WHICH IS <star/> <star index="2"/> OR <star index="3"/></sraix></li>
 </condition></template>
 </category>
 <category><pattern><set>name</set> IS TALLER THAN <set>name</set></pattern>
@@ -998,7 +998,7 @@ They both have <get var="n1"/> letters.
 <template><think>
 <set var="types"><srai>WHAT ISA <star/></srai></set>
 <condition var="types">
-<li value="NIL"><set var="result"><sraix service="pannous">IS <star/> A <star index="2"/></sraix></set></li>
+<li value="NIL"><set var="result"><sraix>IS <star/> A <star index="2"/></sraix></set></li>
 <li><set var="result">No.</set></li>
 </condition>
 </think>

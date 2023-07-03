@@ -700,7 +700,7 @@ The <map><name>number2ordinal</name><get var="nth"/></map> letter of "<star inde
 <li>
 <condition name="jsenabled">
 <li value="true"><javascript>Math.sqrt(<get var="formula"/>)</javascript></li>
-<li><sraix service="pannous">WHAT IS THE SQUARE ROOT OF <star/></sraix></li>
+<li><sraix>WHAT IS THE SQUARE ROOT OF <star/></sraix></li>
 </condition>
 </li>
 </condition></template>
