@@ -71,6 +71,19 @@
 <li>Can a <bot name="species"/> <star index="3"/> <star index="4"/>?</li>
 </random></template>
 </category>
+
+<category><pattern>WHAT IS A *</pattern>
+<template><sraix><star/></sraix></template>
+</category>
+
+<category><pattern>WHAT IS THE *</pattern>
+<template><sraix><star/></sraix></template>
+</category>
+
+<category><pattern>WHAT IS *</pattern>
+<template><sraix><star/></sraix></template>
+</category>
+
 <category><pattern>WHAT IS * MADE FROM</pattern>
 <template><star/>,</template>
 </category>
@@ -403,7 +416,7 @@
 <set var="opposite"><map><name>opposite</name><get var="word"/></map></set>
 </think>
 <condition var="opposite">
-<li value="unknown"><sraix service="pannous">WHAT IS THE OPPOSITE OF <star/></sraix></li>
+<li value="unknown"><sraix>WHAT IS THE OPPOSITE OF <star/></sraix></li>
 <li><get var="opposite"/></li>
 </condition></template>
 </category>
@@ -1803,7 +1816,7 @@ By "we" do you mean you and me?</li>
 <template>No, I am an immortal robot.</template>
 </category>
 <category><pattern>TEACH ME HOW TO *</pattern>
-<template><sraix service="pannous">HOW DO I <star/></sraix></template>
+<template><sraix>HOW DO I <star/></sraix></template>
 </category>
 <category><pattern><set>fastfood</set></pattern>
 <template><srai>FIND THE NEAREST <star/></srai></template>

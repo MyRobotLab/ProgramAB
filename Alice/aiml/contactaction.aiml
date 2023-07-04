@@ -603,11 +603,11 @@ You haven't yet added <condition name="contacttype"><li value="unknown">a phone<
 <category><pattern>QUERYINFO EXTERNAL</pattern>
 <template><srai>CONTACTDEBUGINFO QUERTYINFO CONTACTID</srai>
 <condition name="contactquery">
-<li value="DISPLAYNAME"><sraix service="pannous">WHAT IS <get name="contactname"/>'s REAL NAME</sraix></li>
-<li value="BIRTHDAY"><sraix service="pannous">WHEN IS <get name="contactname"/>'s BIRTHDAY</sraix></li>
-<li value="DIALNUMBER"><sraix service="pannous">WHAT IS <get name="contactname"/>'s PHONE NUMBER</sraix></li>
-<li value="EMAILADDRESS"><sraix service="pannous">WHAT IS <get name="contactname"/>'s EMAIL ADDREESS</sraix></li>
-<li><sraix service="pannous">WHO IS <get name="contactname"/></sraix>
+<li value="DISPLAYNAME"><sraix>WHAT IS <get name="contactname"/>'s REAL NAME</sraix></li>
+<li value="BIRTHDAY"><sraix>WHEN IS <get name="contactname"/>'s BIRTHDAY</sraix></li>
+<li value="DIALNUMBER"><sraix>WHAT IS <get name="contactname"/>'s PHONE NUMBER</sraix></li>
+<li value="EMAILADDRESS"><sraix>WHAT IS <get name="contactname"/>'s EMAIL ADDREESS</sraix></li>
+<li><sraix>WHO IS <get name="contactname"/></sraix>
 </li>
 </condition></template>
 </category>

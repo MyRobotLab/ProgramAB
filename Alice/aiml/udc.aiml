@@ -24,7 +24,7 @@
 <li value="NOT A MATH FORMULA"><srai>UDC</srai></li>
 <li><condition name="jsenabled">
     <li value="true"><javascript><get var="formula"/></javascript></li>
-    <li><sraix service="pannous">WHAT IS <star/></sraix></li>
+    <li><sraix>WHAT IS <star/></sraix></li>
     </condition>
 </li>
 </condition></template>
