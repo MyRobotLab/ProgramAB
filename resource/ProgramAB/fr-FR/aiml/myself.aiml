@@ -2,7 +2,7 @@
 <aiml>
   <category>
     <pattern>COMMENT T'APPELLES-TU</pattern>
-    <template>Je m'appelle <get name="name" /></template>
+    <template>Je m'appelle <get name="botname" /></template>
   </category>
   <category>
     <pattern>COMMENT T'APPELLES TU</pattern>
@@ -31,22 +31,22 @@
   <category>
     <pattern>QUI ES-TU</pattern>
     <template>
-      <srai>COMMENT T'APPELLES-TU</srai>. Je suis un <get name="type" /></template>
+      <srai>COMMENT T'APPELLES-TU</srai>, je suis un <bot name="type"/></template>
   </category>
   <category>
     <pattern>QUI ES TU</pattern>
     <template>
-      <srai>COMMENT T'APPELLES-TU</srai>. Je suis un <get name="type" /></template>
+      <srai>COMMENT T'APPELLES-TU</srai>, je suis un <bot name="type"/></template>
   </category>
   <category>
     <pattern>TU ES QUI</pattern>
     <template>
-      <srai>COMMENT T'APPELLES-TU</srai>. Je suis un <get name="type" /></template>
+      <srai>COMMENT T'APPELLES-TU</srai>, je suis un <bot name="type"/></template>
   </category>
   <category>
     <pattern>TU ES QUI *</pattern>
     <template>
-      <srai>COMMENT T'APPELLES-TU</srai>. Je suis un <get name="type" /></template>
+      <srai>COMMENT T'APPELLES-TU</srai>, je suis un <bot name="type"/></template>
   </category>
   <category>
     <pattern>* QUI ES-TU</pattern>
@@ -62,48 +62,72 @@
   </category>
   <category>
     <pattern>QUEL ÂGE AS-TU</pattern>
-    <template>J'ai <get name="age" /> ans.</template>
+    <template><srai>AGE</srai></template>
   </category>
   <category>
     <pattern>QUEL ÂGE AS TU</pattern>
-    <template>J'ai <get name="age" /> ans.</template>
+    <template><srai>AGE</srai></template>
   </category>
   <category>
     <pattern>* QUEL ÂGE AS-TU</pattern>
     <template>
-      <srai>QUEL ÂGE AS-TU</srai>
+      <srai>AGE</srai>
     </template>
   </category>
   <category>
     <pattern>* QUEL ÂGE AS TU</pattern>
     <template>
-      <srai>QUEL ÂGE AS-TU</srai>
+      <srai>AGE</srai>
     </template>
   </category>
   <category>
     <pattern>QUEL AGE AS-TU</pattern>
     <template>
-      <srai>QUEL ÂGE AS-TU</srai>
+      <srai>AGE</srai>
     </template>
   </category>
   <category>
     <pattern>QUEL AGE AS TU</pattern>
     <template>
-      <srai>QUEL ÂGE AS-TU</srai>
+      <srai>AGE</srai>
     </template>
   </category>
   <category>
     <pattern>* QUEL AGE AS-TU</pattern>
     <template>
-      <srai>QUEL ÂGE AS-TU</srai>
+      <srai>AGE</srai>
     </template>
   </category>
   <category>
     <pattern>* QUEL AGE AS TU</pattern>
     <template>
-      <srai>QUEL AGE AS-TU</srai>
+      <srai>AGE</srai>
     </template>
   </category>
+  <category><pattern>AGE</pattern>
+<template><think>
+        <set var="years">
+        <interval>
+        <jformat>dd MM yyyy</jformat>
+        <style>years</style>
+        <from>9 10 2011</from>
+        <to><date jformat="dd MM yyyy"/></to>
+      </interval>
+        </set>
+        <set var="months">
+        <interval>
+        <jformat>dd MM yyyy</jformat>
+        <style>months</style>
+        <from>9 10 2011</from>
+        <to><date jformat="dd MM yyyy"/></to>
+      </interval>
+        </set>
+      </think>
+      <condition var="years">
+        <li value="0">Je n'ai que <get var="months"/> mois.</li>
+        <li>J'ai <get var="years"/> ans.</li>
+      </condition></template>
+</category>
   <category>
     <pattern>QU'EST QUE TU FAIS</pattern>
     <template>Je te parle.</template>
@@ -164,7 +188,7 @@
   </category>
   <category>
     <pattern>TU ES HOMME OU FEMME</pattern>
-    <template>Je suis <get name="gender" /></template>
+    <template>Je suis <bot name="gender" /></template>
   </category>
   <category>
     <pattern>TU ES FEMME OU HOMME</pattern>
@@ -186,7 +210,7 @@
   </category>
   <category>
     <pattern>C'EST QUAND TON ANNIVERSAIRE</pattern>
-    <template>C'est le <get name="birthdate" />.</template>
+    <template>C'est le <bot name="birthdate" />.</template>
   </category>
   <category>
     <pattern>* TON ANNIVERSAIRE</pattern>
@@ -203,22 +227,22 @@
   <category>
     <pattern>OÙ ES-TU</pattern>
     <template>
-      <get name="location" />. Et toi?</template>
+      <bot name="location" />. Et toi?</template>
   </category>
   <category>
     <pattern>OÙ ES TU</pattern>
     <template>
-      <get name="location" />. Et toi?</template>
+      <bot name="location" />. Et toi?</template>
   </category>
   <category>
     <pattern>TU ES OÙ</pattern>
     <template>
-      <get name="location" />. Et toi?</template>
+      <bot name="location" />. Et toi?</template>
   </category>
   <category>
     <pattern>TU ES OÙ *</pattern>
     <template>
-      <get name="location" />. Et toi?</template>
+      <bot name="location" />. Et toi?</template>
   </category>
   <category>
     <pattern>TU ES D'OÙ</pattern>
