@@ -25,11 +25,11 @@
   </category>
   <category>
     <pattern>SYSTEM_EVENT CONFIG STARTED *</pattern>
-    <template>Démarrage de la configuration <star />. <srai>BOOTUP</srai></template>
+    <template>Démarrage de la configuration <star />.</template>
   </category>
   <category>
     <pattern>SYSTEM_EVENT CONFIG LOADED *</pattern>
-    <template>Configuration <star /> démarrée.</template>
+    <template>Configuration <star /> démarrée.<srai>BOOTUP</srai></template>
   </category>
   <category>
     <pattern>SYSTEM_EVENT STARTED LEFT HAND SENSOR</pattern>
