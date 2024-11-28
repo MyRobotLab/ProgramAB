@@ -1951,7 +1951,7 @@
   </category>-->
   
   <category>
-    <pattern>QUE VOIS-TU</pattern>
+    <pattern>QUE VOIS TU</pattern>
     <template><img src="../Llm.png"/><img src="../photoreel.1.png"/>
             <random>
             <li>Patience, je fait turbiner mon processeur.</li>
@@ -1967,7 +1967,7 @@
             </oob></template>
   </category>
   <category>
-    <pattern>QU'EST-CE QUE TU VOIS</pattern>
+    <pattern>QU EST CE QUE TU VOIS</pattern>
     <template><img src="../Llm.png"/><img src="../photoreel.1.png"/>
             <random>
             <li>Patience, je fait turbiner mon processeur.</li>
@@ -1983,7 +1983,7 @@
             </oob></template>
   </category>
   <category>
-    <pattern>QUE VOIS-TU *</pattern>
+    <pattern>QUE VOIS TU *</pattern>
     <template><img src="../Llm.png"/><img src="../photoreel.1.png"/>
             <random>
             <li>Patience, je fait turbiner mon processeur.</li>
