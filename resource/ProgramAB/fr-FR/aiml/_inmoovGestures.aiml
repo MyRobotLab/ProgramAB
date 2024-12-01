@@ -308,7 +308,7 @@
   </category>
   <category>
     <pattern>ROULE TES YEUX</pattern>
-    <template>Mais c'est un peu étrange.
+    <template>D'accord, mais c'est un peu étrange.
         <oob><mrl><service>python</service><method>exec</method><param>eyesInnerSpin(), eyesOuterSpin(), neutral()</param></mrl></oob></template>
   </category>
   <category>
@@ -434,7 +434,7 @@
 	<oob><mrl><service>python</service><method>exec</method><param>victory()</param></mrl></oob></template>
   </category>
   <category>
-    <pattern># BRAS EN L AIR</pattern>
+    <pattern># BRAS EN L'AIR</pattern>
     <template>
       <random>
         <li>J'ai mes bras en l'air.</li>
@@ -502,7 +502,7 @@
         <oob><mrl><service>i01.ear</service><method>clearLock</method></mrl></oob></template>
   </category>
   <category>
-    <pattern>ARRÊTE D ÉCOUTER</pattern>
+    <pattern>ARRÊTE D'ÉCOUTER</pattern>
     <template>Je coupe mon micro.
         <oob><mrl><service>i01.ear</service><method>setAutoListen</method><param>False</param></mrl></oob></template>
   </category>
@@ -909,7 +909,7 @@
         <oob><mrl><service>python</service><method>exec</method><param>photo()</param></mrl></oob></template>
   </category>
   <category>
-    <pattern>A PROPOS DE TOI</pattern>
+    <pattern>À PROPOS DE TOI</pattern>
     <template>Je vais me décrire.
         <oob><mrl><service>python</service><method>exec</method><param>about()</param></mrl></oob></template>
   </category>
@@ -942,12 +942,12 @@
     </template>
   </category>
   <category>
-    <pattern>COMBIEN DE DOIGTS AS TU</pattern>
+    <pattern>COMBIEN DE DOIGTS AS-TU</pattern>
     <template>Je vais compter.
         <oob><mrl><service>python</service><method>exec</method><param>howmanyfingersdoihave()</param></mrl></oob></template>
   </category>
   <category>
-    <pattern>QUI EST LA</pattern>
+    <pattern>QUI EST LÀ</pattern>
     <template>Qui est la
         <oob><mrl><service>python</service><method>exec</method><param>welcome()</param></mrl></oob></template>
   </category>
@@ -1018,7 +1018,7 @@
     </template>
   </category>
   <category>
-    <pattern>REPETE MOUVEMENT POUR LONDRES</pattern>
+    <pattern>RÉPÈTE MOUVEMENT POUR LONDRES</pattern>
     <template>
       <oob>
         <mrl>
@@ -1290,7 +1290,7 @@
     </template>
   </category>
   <category>
-    <pattern>D OÙ VIENS TU</pattern>
+    <pattern>D'OÙ VIENS-TU</pattern>
     <template>
       <oob>
         <mrl>
@@ -1358,7 +1358,7 @@
     </template>
   </category>
   <category>
-    <pattern>DONNE MOI L HEURE</pattern>
+    <pattern>DONNE MOI L'HEURE</pattern>
     <template>
       <oob>
         <mrl>
@@ -1382,7 +1382,7 @@
     </template>
   </category>
   <category>
-    <pattern>PAS D INQUIÉTUDE</pattern>
+    <pattern>PAS D'INQUIÉTUDE</pattern>
     <template>
       <oob>
         <mrl>
@@ -1414,7 +1414,7 @@
     <template>Je démarre le module d'analyse des visages. <oob><mrl><service>python</service><method>exec</method><param>facerecognizer()</param></mrl></oob></template>
   </category>
   <category>
-    <pattern>ARRÊTE L ANALYSE DE VISAGE</pattern>
+    <pattern>ARRÊTE L'ANALYSE DE VISAGE</pattern>
     <template>J'arrête le module d'analyse des visages. <oob><mrl><service>python</service><method>exec</method><param>stopfacerecognizer()</param></mrl></oob></template>
   </category>
   <category>
@@ -1434,7 +1434,7 @@
     </template>
   </category>
   <category>
-    <pattern>RECONNAIT UN VISAGE</pattern>
+    <pattern>RECONNAÎT UN VISAGE</pattern>
     <template>
       <srai>CHERCHE LES HUMAINS</srai>
     </template>
@@ -1677,7 +1677,7 @@
         <oob><mrl><service>i01</service><method>stopPIR</method></mrl></oob></template>
   </category>
   <category>
-    <pattern>COMMENT VAS TU</pattern>
+    <pattern>COMMENT VAS-TU</pattern>
     <template>
       <oob>
         <mrl>
@@ -1911,7 +1911,7 @@
     </category>
   </topic>
   <!--<category>
-    <pattern>QUE VOIS TU</pattern>
+    <pattern>QUE VOIS-TU</pattern>
     <template>
       <think>-->
         <!--  initial sentence ( workarround, because sraix blocking action here, sentence pushed inside a set )-->
@@ -1951,7 +1951,7 @@
   </category>-->
   
   <category>
-    <pattern>QUE VOIS TU</pattern>
+    <pattern>QUE VOIS-TU</pattern>
     <template><img src="../Llm.png"/><img src="../photoreel.1.png"/>
             <random>
             <li>Patience, je fait turbiner mon processeur.</li>
@@ -1967,7 +1967,7 @@
             </oob></template>
   </category>
   <category>
-    <pattern>QU EST CE QUE TU VOIS</pattern>
+    <pattern>QU'EST-CE QUE TU VOIS</pattern>
     <template><img src="../Llm.png"/><img src="../photoreel.1.png"/>
             <random>
             <li>Patience, je fait turbiner mon processeur.</li>
@@ -1983,7 +1983,7 @@
             </oob></template>
   </category>
   <category>
-    <pattern>QUE VOIS TU *</pattern>
+    <pattern>QUE VOIS-TU *</pattern>
     <template><img src="../Llm.png"/><img src="../photoreel.1.png"/>
             <random>
             <li>Patience, je fait turbiner mon processeur.</li>
@@ -2000,7 +2000,7 @@
     </template>
   </category>
   <category>
-    <pattern># CE QUE C EST</pattern>
+    <pattern># CE QUE C'EST</pattern>
     <template>Fait moi voir.
         <oob><mrl><service>python</service><method>exec</method><param>YoloOnUSonic()</param></mrl></oob></template>
   </category>
@@ -2025,11 +2025,11 @@
   <category>
     <pattern>SYSTEM_SEE_OBJECT</pattern>
     <template>
-      <srai>QUE VOIS TU</srai>
+      <srai>QUE VOIS-TU</srai>
     </template>
   </category>
   <category>
-    <pattern>LANCE L APPLICATION * </pattern>
+    <pattern>LANCE L'APPLICATION * </pattern>
     <template>
       <oob>
         <mrl>
