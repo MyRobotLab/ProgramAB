@@ -108,4 +108,16 @@
       Je pense que c'est une balle.
    </template>
   </category>
+  <category>
+    <pattern>call_911_1</pattern>
+    <template>
+      J'appelle le service des urgence.
+   </template>
+  </category>
+  <category>
+    <pattern>call_911_2</pattern>
+    <template>
+      À l'aide, j'appelle car il y a un humain en face de moi qui veut me faire du mal.
+   </template>
+  </category>
 </aiml>
