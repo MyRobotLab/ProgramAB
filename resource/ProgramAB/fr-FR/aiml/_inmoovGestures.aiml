@@ -1269,7 +1269,7 @@
         <oob><mrl><service>python</service><method>exec</method><param>madeby()</param></mrl></oob></template>
   </category>
   <category>
-    <pattern>CRÉATION EN FRANçAIS</pattern>
+    <pattern>CRÉATION EN FRANÇAIS</pattern>
     <template>.
         <oob><mrl><service>python</service><method>exec</method><param>madebyfrench()</param></mrl></oob></template>
   </category>
@@ -2059,7 +2059,7 @@
   <category><pattern>STOP VOYAGE</pattern>
     <template><oob><mrl><service>python</service><method>exec</method><param>stopTravel()</param></mrl></oob></template>
   </category>
-  <category><pattern>PUIS-JE TE FAIRE MAL</pattern>
+  <category><pattern>* TE * MAL</pattern>
     <template><srai>APPFEAR</srai><oob><mrl><service>python</service><method>exec</method><param>call_911()</param></mrl></oob></template>
   </category>
   <category><pattern># DIABLE</pattern>

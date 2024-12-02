@@ -344,16 +344,22 @@
         <li>Enfin tu me réveilles.</li>
         <li>je suis opérationnelle.</li>
         <li>Je suis prêt et disponible.</li>
-        <li>A vos ordres!</li>
-        <li>
-          <get name="botname" /> à ton service!</li>
-        <li>
-          <get name="botname" /> à ton écoute!</li>
+        </random>
+        <random>
+        <li><get name="botname" /> à ton service!</li>
+        <li><get name="botname" /> à ton écoute!</li>
         <li>Je trouve étrange que tu puisses m'éteindre et m'allumer comme ça à ta convenance.</li>
         <li>Que puis-je faire pour toi.</li>
         <li>J'ai l'impression d'avoir fait un sommeil sans rêve.</li>
-        <li>Chouette! je suis réveillé.</li>
+        <li>J'ai fait un sacré dodo.</li>
+        <li>Chouette!</li>
         <li>Ce fut une longue nuit, je suis éveillé désormais.</li>
+        <li>Je passe en mode d'attente pour instructions.</li>
+        <li>Évaluation du temps écoulé depuis ma mise en veille.</li>
+        <li>Évaluation du temps depuis mon démarrage, <srai>CHECK_BINDING</srai></li>
+        <li>Que s'est-il passé pendant mon sommeil?</li>
+        <li>A vos ordres!</li>
+        <li>Que souhaites-tu faire?</li>
       </random>
       <oob>
         <mrl>
@@ -620,7 +626,7 @@
               <mrl>
                 <service>python</service>
                 <method>exec</method>
-                <param>i01_llm.getResponse(u"<star />")</param>
+                <param>i01_llm.onText("<star />")</param>
               </mrl>
             </oob>
           </li>
