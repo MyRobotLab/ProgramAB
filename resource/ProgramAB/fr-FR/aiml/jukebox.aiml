@@ -241,4 +241,53 @@
     <pattern>END_PLAYLIST</pattern>
     <template>Je suis arrivé à la fin de la playlist. Je remonte au début de la liste.</template>
   </category>
+  <category>
+    <pattern>* RADIO *</pattern>
+    <template>Okay, je lance la radio <star index="2"/>.
+      <think><set name="radio"><star index="2"/></set></think>
+      <condition name="radio">
+      <li value="france info">
+          <think><set name="radio">"http://direct.franceinfo.fr/live/franceinfo-midfi.mp3"</set></think>
+      </li>
+      <li value="france inter">
+          <think><set name="radio">"http://direct.franceinter.fr/live/franceinter-midfi.mp3"</set></think>
+      </li>
+      <li value="fip">
+          <think><set name="radio">"http://direct.fipradio.fr/live/fip-webradio4.mp3"</set></think>
+      </li>
+      <li value="rire et chansons">
+          <think><set name="radio">"http://cdn.nrjaudio.fm/adwz1/fr/30407/mp3_128.mp3?origine=fluxradios"</set></think>
+      </li>
+    </condition>
+      <oob>
+        <mrl>
+          <service>python</service>
+          <method>exec</method>
+          <param>startRadio(<get name="radio"/>)</param>
+        </mrl>
+      </oob>
+    <srai>APPSMILE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>STOP LA RADIO</pattern>
+    <template>Voilà, la radio est éteinte.
+      <oob>
+        <mrl>
+           <service>python</service>
+          <method>exec</method>
+          <param>stopRadio()</param>
+        </mrl>
+      </oob>
+    <srai>APPSMILE</srai>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>ARRÊTE LA RADIO</pattern>
+    <template>
+    <srai>STOP LA RADIO</srai>
+    </template>
+  </category>
 </aiml>
