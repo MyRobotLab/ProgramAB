@@ -491,6 +491,21 @@
       <srai>DA VINCI</srai>
     </template>
   </category>
+  <category><pattern>ACTIVE * OREILLES</pattern>
+  <template>Je démarre mon micro.
+        <oob>
+        <mrl>
+          <service>python</service>
+          <method>exec</method>
+          <param>earON()</param>
+        </mrl>
+      </oob>
+      <srai>APPHAPPY</srai>
+  </template>
+  </category>
+  <category><pattern>DÉMARRE * OREILLES</pattern>
+  <template><srai>ACTIVE <star/> OREILLES</srai></template>
+  </category>
   <!--<category>
   UTILISER LE WAKEWORD
     <pattern>MANUEL</pattern>
@@ -504,30 +519,26 @@
         <oob><mrl><service>python</service><method>exec</method><param>i01_ear.setAwake(True)</param></mrl></oob></template>
   </category>-->
   <category>
-    <pattern>ARRÊTE D ÉCOUTER</pattern>
-    <template>Je coupe mon micro.
+  <pattern>ARRÊTE D ÉCOUTER</pattern>
+  <template>Je coupe mon micro.
         <oob><mrl><service>python</service><method>exec</method><param>earOFF()</param></mrl></oob></template>
         <srai>APPHAPPY</srai>
   </category>
   <category>
-    <pattern>STOPPE LES OREILLES</pattern>
-    <template><srai>ARRÊTE D'ÉCOUTER</srai></template>
+  <pattern>STOPPE * OREILLES</pattern>
+  <template><srai>ARRÊTE D ÉCOUTER</srai></template>
   </category>
-  <category>
-    <pattern>STOP LES OREILLES</pattern>
-    <template><srai>ARRÊTE D ÉCOUTER</srai></template>
+  <category><pattern>STOP * OREILLES</pattern>
+  <template><srai>ARRÊTE D ÉCOUTER</srai></template>
   </category>
-  <category>
-    <pattern>DÉSACTIVE LES OREILLES</pattern>
-    <template><srai>ARRÊTE D ÉCOUTER</srai></template>
+  <category><pattern>DÉSACTIVE * OREILLES</pattern>
+  <template><srai>ARRÊTE D ÉCOUTER</srai></template>
   </category>
-  <category>
-    <pattern>ARRÊT DES OREILLES</pattern>
-    <template><srai>ARRÊTE D'ÉCOUTER</srai></template>
+  <category><pattern>ARRÊT * OREILLES</pattern>
+  <template><srai>ARRÊTE D ÉCOUTER</srai></template>
   </category>
-  <category>
-    <pattern>ARRÊTE LES OREILLES</pattern>
-    <template><srai>ARRÊTE D ÉCOUTER</srai></template>
+  <category><pattern>ARRÊTE * OREILLES</pattern>
+  <template><srai>ARRÊTE D ÉCOUTER</srai></template>
   </category>
     <pattern>VITESSE MAXI</pattern>
     <template>Mes servos sont en vitesse maximum.
