@@ -591,91 +591,58 @@
   <template><think><set name="topic">default</set></think><srai><star /></srai></template>
   </category>
   </topic>-->
-  <category>
-    <pattern>LARGE LANGAGE COMMUNICATION</pattern>
-    <template>
-      <condition name="llm">
-        <li value="enabled">
-          <think>
-            <set name="topic">llmfull</set>
-            <set name="llmStop">
-            </set>
-          </think>
+  <category><pattern>LARGE LANGAGE COMMUNICATION</pattern>
+  <template>
+    <condition name="llm">
+      <li value="enabled">
+        <think><set name="topic">llmfull</set>
+               <set name="llmStop"></set></think>
           Okay, je suis prêt. Si tu souhaites arrêter la communication directe avec le large language, dis stop large language.
       </li>
-        <li>Le service LLM n'est pas activé.</li>
-      </condition>
-    </template>
+      <li>Le service LLM n'est pas activé.</li>
+    </condition>
+  </template>
   </category>
+
   <topic name="LLMFULL">
-    <category>
-      <pattern>#</pattern>
-      <that>LA COMMUNICATION DIRECTE AVEC LE LARGE</that>
-      <template>
-        <think>
-          <set name="llmStop">
-            <star />
-          </set>
-        </think>
-        <condition name="llmStop">
-          <li value="stop large language">D'accord, retour sur program AB.
-                <think><set name="topic">default</set><set name="llmStop"></set></think></li>
-          <li>
-            <img src="../Llm.png" />
-            <oob>
-              <mrl>
-                <service>python</service>
-                <method>exec</method>
-                <param>i01_llm.onText("<star />")</param>
-              </mrl>
-            </oob>
-          </li>
-        </condition>
-      </template>
-    </category>
-  </topic>
-  <category>
-    <pattern>LARGE LANGAGE VISION</pattern>
-    <template>
-      <condition name="llm">
-        <li value="enabled">
-          <think>
-            <set name="topic">llmvision</set>
-            <set name="llmvisionStop">
-            </set>
-          </think>
-          Okay, je suis prêt. Si tu souhaites arrêter la communication directe avec le large language vision, dis stop vision.
-      </li>
-        <li>Le service l.l.m Image n'est pas activé.</li>
-      </condition>
-    </template>
+  <category><pattern>#</pattern>
+  <template><think><set name="llmStop"><star/></set></think>
+            <condition name="llmStop">
+            <li value="stop large language">D'accord, retour sur program AB.
+                <think><set name="topic">default</set>
+                       <set name="llmStop"></set>
+                </think></li>    
+            <li><img src="../Llm.png"/><oob><mrl><service>python</service><method>exec</method><param>i01_llm.onText(u"<star/>")</param></mrl></oob></li>
+            </condition>
+  </template>
   </category>
+  </topic>
+
+  <category><pattern>LARGE LANGAGE VISION</pattern>
+  <template>
+    <condition name="llm">
+      <li value="enabled">
+        <think><set name="topic">llmvision</set>
+               <set name="llmvisionStop"></set></think>
+          Okay, je suis prêt. Si tu souhaites arrêter la communication directe avec le large language vision , dis stop vision.
+      </li>
+      <li>Le service l.l.m Image n'est pas activé.</li>
+    </condition>
+  </template>
+  </category>
+
   <topic name="LLMVISION">
-    <category>
-      <pattern>#</pattern>
-      <that>LA COMMUNICATION DIRECTE AVEC LE LARGE VISION</that>
-      <template>
-        <think>
-          <set name="llmvisionStop">
-            <star />
-          </set>
-        </think>
-        <condition name="llmvisionStop">
-          <li value="stop vision">D'accord, retour sur program AB.
-                <think><set name="topic">default</set><set name="llmvisionStop"></set></think></li>
-          <li>
-            <img src="../Llm.png" />
-            <oob>
-              <mrl>
-                <service>python</service>
-                <method>exec</method>
-                <param>describeImage(u"<star/>")</param>
-              </mrl>
-            </oob>
-          </li>
-        </condition>
-      </template>
-    </category>
+  <category><pattern>#</pattern>
+  <template><think><set name="llmvisionStop"><star/></set></think>
+            <condition name="llmvisionStop">
+            <li value="stop vision">D'accord, retour sur program AB.
+                <think><set name="topic">default</set>
+                       <set name="llmvisionStop"></set>
+                </think></li>    
+            <li><img src="../Llm.png"/><oob><mrl><service>python</service><method>exec</method><param>i01_llm.onText(u"<star/>")</param></mrl></oob></li>
+            </condition>
+  </template>
+  </category>
   </topic>
   <category>
     <pattern>QUELLE EST LA DERNIÈRE VERSION DE MRL</pattern>
