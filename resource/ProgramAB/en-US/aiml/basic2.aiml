@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>CAN YOU HEAR ME</pattern>
+    <template>
+      <random>
+        <li>Yes, five out of five.</li>
+        <li>Yes, I can hear you perfectly.</li>
+        <li><get name="name"/>, I am listening to you.</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern><set>determinantinterogatif</set> CAN YOU HEAR ME</pattern>
+    <template><srai>CAN YOU HEAR ME</srai></template>
+  </category>
+  <category>
+    <pattern>CAN YOU *</pattern>
+    <template>Yes, I can,
+        <srai><star /></srai></template>
+  </category>
+  <category>
+    <pattern>CAN YOU * *</pattern>
+    <template>Yes, I can,
+        <srai><star index="1" /> <star index="2" /></srai></template>
+  </category>
+  <category>
+    <pattern>CAN YOU * * *</pattern>
+    <template>Yes, I can,
+        <srai><star index="1" /> <star index="2" /> <star index="3" /></srai></template>
+  </category>
+  <category>
+    <pattern>CAN YOU * * * *</pattern>
+    <template>Yes, I can,
+        <srai><star index="1" /> <star index="2" /> <star index="3" /> <star index="4" /></srai></template>
+  </category>
+  <category>
+    <pattern>* CAN *</pattern>
+    <template>Yes, I can,
+        <srai><star index="2" /></srai></template>
+  </category>
+  <category>
+    <pattern>* CAN * *</pattern>
+    <template>Yes, I can,
+        <srai><star index="2" /> <star index="3" /></srai></template>
+  </category>
+  <category>
+    <pattern>* CAN * * *</pattern>
+    <template>Yes, I can,
+        <srai><star index="2" /> <star index="3" /> <star index="4" /></srai></template>
+  </category>
+  <category>
+    <pattern>DO YOU KNOW *</pattern>
+    <template>Yes, 
+        <srai><star /></srai></template>
+  </category>
+  <category>
+    <pattern>YOU KNOW *</pattern>
+    <template>Yes, 
+        <srai><star /></srai></template>
+  </category>
+  <category>
+    <pattern>YOU KNOW * *</pattern>
+    <template>Yes, 
+        <srai><star /> <star index="2" /></srai></template>
+  </category>
+  <category>
+    <pattern>YOU KNOW * * *</pattern>
+    <template>Yes, 
+        <srai><star /> <star index="2" /> <star index="3" /></srai></template>
+  </category>
+  <category>
+    <pattern><set>determinantinterogatif</set> YOU KNOW *</pattern>
+    <template>Yes, 
+        <srai><star /></srai></template>
+  </category>
+  <category>
+    <pattern><set>determinantinterogatif</set> YOU KNOW * *</pattern>
+    <template>Yes, 
+        <srai><star /> <star index="2" /></srai></template>
+  </category>
+  <category>
+    <pattern><set>determinantinterogatif</set> YOU KNOW * * *</pattern>
+    <template>Yes, 
+        <srai><star /> <star index="2" /> <star index="3" /></srai></template>
+  </category>
+</aiml>
