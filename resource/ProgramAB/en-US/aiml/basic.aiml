@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>SALUTATIONIN</pattern>
+    <template>
+      <srai>apphappy</srai>
+      <random>
+        <li>Hi </li>
+        <li>Hey </li>
+        <li>Hello </li>
+      </random>
+      <condition>
+        <li name="name" value="human">
+          <srai>NEW_INIT_USER</srai>
+        </li>
+        <li>
+          <get name="name"/>!</li>
+      </condition>
+    </template>
+  </category>
+  <category>
+    <pattern>
+      <set>salutationin</set>
+    </pattern>
+    <template>
+      <srai>SALUTATIONIN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* <set>salutationin</set></pattern>
+    <template>
+      <srai>SALUTATIONIN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>
+      <set>salutationin</set> *</pattern>
+    <template>
+      <srai>SALUTATIONIN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* <set>salutationin</set> *</pattern>
+    <template>
+      <srai>SALUTATIONIN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template>
+      <srai>NEW_INIT_USER</srai>
+      <think>
+        <set name="tempname">
+          <star />
+        </set>
+      </think>
+    </template>
+  </category>
+  <category>
+    <pattern>I AM *</pattern>
+    <template>
+      <srai>NEW_INIT_USER</srai>
+      <think>
+        <set name="tempname">
+          <star />
+        </set>
+      </think>
+    </template>
+  </category>
+  <category>
+    <pattern>I AM CALLED *</pattern>
+    <template>
+      <srai>NEW_INIT_USER</srai>
+      <think>
+        <set name="tempname">
+          <star />
+        </set>
+      </think>
+    </template>
+  </category>
+  <category>
+    <pattern>MY USER NAME *</pattern>
+    <template>
+      <srai>NEW_INIT_USER</srai>
+      <think>
+        <set name="tempname">
+          <star />
+        </set>
+      </think>
+    </template>
+  </category>
+  <category>
+    <pattern>SALUTATIONOUT</pattern>
+    <template>
+      <random>
+        <li>Bye <get name="name" /></li>
+        <li>Bye bye <get name="name" /></li>
+        <li>Ciao <get name="name" /></li>
+        <li>Good bye <get name="name" /></li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>
+      <set>salutationout</set>
+    </pattern>
+    <template>
+      <srai>SALUTATIONOUT</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* <set>salutationout</set></pattern>
+    <template>
+      <srai>SALUTATIONOUT</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>
+      <set>salutationout</set> *</pattern>
+    <template>
+      <srai>SALUTATIONOUT</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* <set>salutationout</set> *</pattern>
+    <template>
+      <srai>SALUTATIONOUT</srai>
+    </template>
+  </category>
+  <!--<category>
+    <pattern>
+      <set>greeting</set>
+    </pattern>
+    <template>
+      <think>
+        <set name="topic">how do you do</set>
+      </think>
+            I am well, thanks. What about you?
+        </template>
+  </category>-->
+  <topic name="how do you do">
+    <category>
+      <pattern>WHAT S UP</pattern>
+      <template>I am doing well <get name="name" />. What do you like to do?</template>
+    </category>
+    <category>
+      <pattern>WHAT S UP *</pattern>
+      <template>
+        <srai>WHAT S UP</srai>
+      </template>
+    </category>
+    <category>
+      <pattern>GOOD *</pattern>
+      <template>
+        <srai>WHAT S UP</srai>
+      </template>
+    </category>
+    <category>
+      <pattern>YES</pattern>
+      <template>
+        <srai>WHAT S UP</srai>
+      </template>
+    </category>
+    <category>
+      <pattern>YES *</pattern>
+      <template>
+        <srai>WHAT S UP</srai>
+      </template>
+    </category>
+    <category>
+      <pattern>NO NOT REALLY *</pattern>
+      <template>
+        <think>
+          <set name="topic">sad</set>
+        </think>
+                Why?
+            </template>
+    </category>
+    <category>
+      <pattern>NO</pattern>
+      <template>
+        <think>
+          <set name="topic">sad</set>
+        </think>
+                Why?
+            </template>
+    </category>
+    <category>
+      <pattern>NO *</pattern>
+      <template>
+        <think>
+          <set name="topic">sad</set>
+        </think>
+                Why?
+            </template>
+    </category>
+  </topic>
+  <topic name="sad">
+    <category>
+      <pattern>*</pattern>
+      <template>I hope it's not serious. There is a proverb that says, with time everything passes. I don't know if it's true though.</template>
+    </category>
+  </topic>
+</aiml>

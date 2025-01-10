@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>CÓMO TE LLAMAS</pattern>
+    <template>Mi nombre es <get name="botname" /></template>
+  </category>
+  <category>
+    <pattern>* CÓMO TE LLAMAS</pattern>
+    <template>
+      <srai>CÓMO TE LLAMAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>QUIÉN ERES</pattern>
+    <template>
+      <srai>CÓMO TE LLAMAS</srai>, soy un <bot name="species" /> <bot name="job" /></template>
+  </category>
+  <category>
+    <pattern>QUIÉN ERES *</pattern>
+    <template>
+      <srai>COMMENT T'APPELLES-TU</srai>, soy un <bot name="species" /> <bot name="job" /></template>
+  </category>
+  <category>
+    <pattern>* QUIÉN ERES *</pattern>
+    <template>
+      <srai>CÓMO TE LLAMAS</srai>, soy un <bot name="species" /> <bot name="job" /></template>
+  </category>
+  <category>
+    <pattern>* QUIÉN ERES</pattern>
+    <template>
+      <srai>CÓMO TE LLAMAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>CUÁNTOS AÑOS TIENE</pattern>
+    <template>EDAD</template>
+  </category>
+  <category>
+    <pattern>* CUÁNTOS AÑOS TIENE</pattern>
+    <template>
+      <srai>EDAD</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>CUÁL ES TU EDAD</pattern>
+    <template>
+      <srai>EDAD</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* CUÁL ES TU EDAD</pattern>
+    <template>
+      <srai>EDAD</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>CUÁL ES TU EDAD *</pattern>
+    <template>
+      <srai>EDAD</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* CUÁL ES TU EDAD *</pattern>
+    <template>
+      <srai>EDAD</srai>
+    </template>
+  </category>
+  <category><pattern>EDAD</pattern>
+    <template><think>
+        <set var="years">
+        <interval>
+        <jformat>dd MM yyyy</jformat>
+        <style>years</style>
+        <from><bot name="birth"/></from>
+        <to><date jformat="dd MM yyyy"/></to>
+      </interval>
+        </set>
+        <set var="months">
+        <interval>
+        <jformat>dd MM yyyy</jformat>
+        <style>months</style>
+        <from><bot name="birth"/></from>
+        <to><date jformat="dd MM yyyy"/></to>
+      </interval>
+        </set>
+      </think>
+      <condition var="years">
+        <li value="0">Tengo <get var="months"/> meses.</li>
+        <li>Tengo <get var="years"/> años.</li>
+      </condition></template>
+</category>
+  <category>
+    <pattern>QUÉ ESTÁS HACIENDO</pattern>
+    <template>Estoy hablando contigo.</template>
+  </category>
+  <category>
+    <pattern>¿QUÉ ESTÁS HACIENDO AHORA?</pattern>
+    <template>
+      <srai>QUÉ ESTÁS HACIENDO</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* ¿QUÉ ESTÁS HACIENDO AHORA?</pattern>
+    <template>
+      <srai>QUÉ ESTÁS HACIENDO</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>ERES HOMBRE O MUJER</pattern>
+    <template>Soy <bot name="gender" /></template>
+  </category>
+  <category>
+    <pattern>ERES MUJER O HOMBRE</pattern>
+    <template>
+      <srai>ERES HOMBRE O MUJER</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* ERES MUJER O HOMBRE</pattern>
+    <template>
+      <srai>ERES HOMBRE O MUJER</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* ERES HOMBRE O MUJER</pattern>
+    <template>
+      <srai>ERES HOMBRE O MUJER</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>CUÁNDO ES TU CUMPLEAÑOS</pattern>
+    <template>Este es el <bot name="birthdate" />.</template>
+  </category>
+  <category>
+    <pattern>* TU CUMPLEAÑOS</pattern>
+    <template>
+      <srai>CUÁNDO ES TU CUMPLEAÑOS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* TU CUMPLEAÑOS *</pattern>
+    <template>
+      <srai>CUÁNDO ES TU CUMPLEAÑOS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>DÓNDE ESTÁS</pattern>
+    <template>
+      <bot name="location" />. ¿Y tú?</template>
+  </category>
+  <category>
+    <pattern>* DÓNDE ESTÁS</pattern>
+    <template>
+      <bot name="location" />. ¿Y tú?</template>
+  </category>
+  <category>
+    <pattern>DÓNDE ESTÁS</pattern>
+    <template>
+      <bot name="location" />. ¿Y tú?</template>
+  </category>
+  <category>
+    <pattern>DÓNDE ESTÁS *</pattern>
+    <template>
+      <bot name="location" />. ¿Y tú?</template>
+  </category>
+  <category>
+    <pattern>* DE DÓNDE ERES</pattern>
+    <template>
+      <srai>DÓNDE ESTÁS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>DE DÓNDE ERES *</pattern>
+    <template>
+      <srai>DÓNDE ESTÁS</srai>
+    </template>
+  </category>
+</aiml>

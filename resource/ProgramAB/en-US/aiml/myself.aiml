@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>WHAT S YOUR NAME</pattern>
+    <template>My name is <get name="botname" /></template>
+  </category>
+  <category>
+    <pattern>DO YOU HAVE A NAME</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR NAME</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* WHAT S YOUR NAME</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* WHAT IS YOUR NAME</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHO ARE YOU</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>, a <bot name="species"/> <bot name="lastname"/> <bot name="job"/></template>
+  </category>
+  <category>
+    <pattern>WHO ARE YOU *</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>, a <bot name="species"/> <bot name="lastname"/> <bot name="job"/></template>
+  </category>
+  <category>
+    <pattern>WHAT ARE YOU</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>, a <bot name="species"/> <bot name="job"/></template>
+  </category>
+  <category>
+    <pattern>WHAT ARE YOU *</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>, a <bot name="species"/> <bot name="job"/></template>
+  </category>
+  <category>
+    <pattern>* WHO ARE YOU</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* WHAT ARE YOU</pattern>
+    <template>
+      <srai>WHAT S YOUR NAME</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HOW OLD ARE YOU</pattern>
+    <template><srai>AGE</srai></template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR AGE</pattern>
+    <template><srai>AGE</srai></template>
+  </category>
+  <category>
+    <pattern>* HOW OLD ARE YOU</pattern>
+    <template>
+      <srai>AGE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* WHAT IS YOUR AGE</pattern>
+    <template>
+      <srai>AGE</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHEN IS YOUR BIRTHDAY</pattern>
+    <template>
+      <template>I was created on <bot name="birthdate"/>.</template>
+    </template>
+  </category>
+  <category>
+    <pattern>* WHEN IS YOUR BIRTHDAY</pattern>
+    <template>
+      <srai>WHEN IS YOUR BIRTHDAY</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>DO YOU HAVE A BIRTHDAY</pattern>
+    <template>
+      <srai>WHEN IS YOUR BIRTHDAY</srai>
+    </template>
+  </category>
+  <category><pattern>AGE</pattern>
+    <template><think>
+        <set var="years">
+        <interval>
+        <jformat>dd MM yyyy</jformat>
+        <style>years</style>
+        <from><bot name="birth"/></from>
+        <to><date jformat="dd MM yyyy"/></to>
+      </interval>
+        </set>
+        <set var="months">
+        <interval>
+        <jformat>dd MM yyyy</jformat>
+        <style>months</style>
+        <from><bot name="birth"/></from>
+        <to><date jformat="dd MM yyyy"/></to>
+      </interval>
+        </set>
+      </think>
+      <condition var="years">
+        <li value="0">I am <get var="months"/> months old.</li>
+        <li>I am <get var="years"/> years old.</li>
+      </condition></template>
+</category>
+  <category>
+    <pattern>WHAT ARE YOU DOING</pattern>
+    <template>I'm talking to you.</template>
+  </category>
+  <category>
+    <pattern>WHAT ARE YOU DOING NOW</pattern>
+    <template>
+      <srai>WHAT ARE YOU DOING</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT DO YOU DO</pattern>
+    <template>
+      <srai>WHAT ARE YOU DOING</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* WHAT ARE YOU DOING NOW</pattern>
+    <template>
+      <srai>WHAT ARE YOU DOING</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YOU ARE MAN OR WOMAN</pattern>
+    <template>I am <bot name="gender" /></template>
+  </category>
+  <category>
+    <pattern>ARE YOU WOMAN OR MAN</pattern>
+    <template>
+      <srai>YOU ARE MAN OR WOMAN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* ARE YOU WOMAN OR MAN</pattern>
+    <template>
+      <srai>YOU ARE MAN OR WOMAN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* YOU ARE MAN OR WOMAN</pattern>
+    <template>
+      <srai>YOU ARE MAN OR WOMAN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* YOU ARE A WOMAN OR A MAN</pattern>
+    <template>
+      <srai>YOU ARE MAN OR WOMAN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* YOU ARE A MAN OR A WOMAN</pattern>
+    <template>
+      <srai>YOU ARE MAN OR WOMAN</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHAT IS YOUR BIRTHDAY</pattern>
+    <template>It is on the <bot name="birthdate" />.</template>
+  </category>
+  <category>
+    <pattern>* YOUR BIRTHDAY</pattern>
+    <template>
+      <srai>WHAT IS YOUR BIRTHDAY</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>* YOUR BIRTHDAY *</pattern>
+    <template>
+      <srai>WHAT IS YOUR BIRTHDAY</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHERE ARE YOU</pattern>
+    <template>
+      <bot name="location" />. And you?</template>
+  </category>
+  <category>
+    <pattern>WHERE ARE YOU</pattern>
+    <template>
+      <bot name="location" />. And you?</template>
+  </category>
+  <category>
+    <pattern>WHERE ARE YOU *</pattern>
+    <template>
+      <bot name="location" />. And you?</template>
+  </category>
+  <category>
+    <pattern>WHERE ARE YOU FROM?</pattern>
+    <template>
+      <srai>WHERE ARE YOU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHERE ARE YOU FROM</pattern>
+    <template>
+      <srai>WHERE ARE YOU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHERE ARE YOU FROM?</pattern>
+    <template>
+      <srai>WHERE ARE YOU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>WHERE ARE YOU FROM *</pattern>
+    <template>
+      <srai>WHERE ARE YOU</srai>
+    </template>
+  </category>
+</aiml>
